@@ -4,17 +4,36 @@
         <div class="row">
           {% if content.year %}
             <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
-              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+              <span class="badge special-font text-uppercase align-middle" style="min-width: 68px; font-size: 0.8rem;">
                 {{ content.year }}
               </span>
             </div>
           {% endif %}
+          {% if content.years %}
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+           {% for year in content.years %}
+              <span class="badge special-font text-uppercase align-middle" style="min-width: 68px; font-size: 0.8rem;">
+                {{ year }}
+              </span>
+              <br>
+            {% endfor %}
+
+            </div>
+          {% endif %}
           <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
             {% if content.title %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
+            <h6 class="title font-weight-bold ml-1 ml-md-4 special-font">{{content.title}}</h6>
+            {% endif %}
+            {% if content.titles %}
+            {% for title in content.titles %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4 special-font">{{title}}</h6>
+            {% endfor %}
             {% endif %}
             {% if content.institution %}
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.institution}}</h6>
+            {% endif %}
+            {% if content.scores %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.scores}}</h6>
             {% endif %}
             {% if content.description %}
               <ul class="items">

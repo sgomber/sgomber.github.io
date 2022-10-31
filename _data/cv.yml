@@ -2,96 +2,87 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Shaurya Gomber
     - name: Date of Birth
-      value: 14th March 1879
+      value: 31st August 1998
     - name: Languages
-      value: English, German
+      value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master's of Science in Computer Science (MS CS)
+      institution: <a href="https://cs.illinois.edu/">University of Illinois, Urbana-Champaign</a>, IL, USA
+      year: 2022-Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - 'Focus: Programming Languages & Formal Methods'
+        - 'Key Courses: Program Verification, Trustworthy AI Systems'
+        - 'Assistantships: Graduate Teaching Assistant Fall 2022 (CS225 Data Structures)'
+    - title: B. Tech Computer Science and Engineering
+      institution:  <a href="https://www.iitg.ac.in/">Indian Institute of Technology, Guwahati</a>, Assam, India
+      year: 2016-2020
+      scores: "CGPA: 9.66/10 (Class Rank: 3/88)"
       description:
-        - Description 1.
-        - Description 2.
+        - 'Thesis: <a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Readability Analysis of Scientific Writing</a>'
+        - 'Advisor: <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>'
+        - Institute Merit Scholarship 2019 of $2800 for scoring the highest grades in the academic year 2018-19.
+    - title: Senior Secondary
+      institution: Jaishree Periwal High School, Jaipur, Rajasthan, India
+      year: 2016
+      scores: 94.4%
+    - title: Secondary
+      institution: Bikaner Boys' School, Bikaner, Rajasthan, India
+      year: 2014
+      scores: "CGPA: 10"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - titles: 
+        - Software Engineer 2
+        - Software Engineer
+      institution: Trading Systems Team,  <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, Hyderabad, India
+      years: 
+        - JAN 2022 - JUN 2022
+        - JUN 2020 - DEC 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Full Stack Development of technological and business enhancements to the firm's proprietary electronic trading system, a distributed application engineered to efficiently handle large amounts of trading data flowing throughout the day.
+        - Mentoring new joinees and participating in code design & review cycles.
+
+    - title: 'Senior Thesis Research: “Readability Analysis of Scientific Writing”'
+      institution: Dr. Ashish Anand, Associate Professor, Dept. of CSE, IIT Guwahati
+      year: AUG 2019 - MAY 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Developed a tool named VReadA (Visual Readability Analyzer), which generates a heatmap to give visual feedback on a text’s readability to the author. It analyzes the text for linguistic complexity,
+          predictability, perplexity and coherence among sections.
+        - Developed novel methods to measure coherence using similarity of sentence vectors in groups of consecutive sentences and used
+          state-of-the-art Language Models, Word Vectors and NLP tools to get accurate results.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Software Engineering Intern
+      institution: Trading Systems Team, D.E. Shaw & Co., Hyderabad, India
+      year: MAY 2019 - JUL 2019
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Implemented a high performance and type-safe functional programming API in Java to read and write trading data on the on-premise database.
+        - Used the API along with the Parallel Streams in Java to get a 60x run-time improvement in production critical reports.
+        - Awarded a Pre-Placement Offer (PPO) for my work at the internship.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2019
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Institute Merit Scholarship 2019 of $2800 by IIT Guwahati for scoring the highest grades in the academic year 2018-19.
 
 - title: Academic Interests
-  type: nested_list
+  type: list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - Programming Languages
+    - Formal Methods
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Playing Table Tennis.
+    - Listening to songs.
+    - Watching movies & stand-up comedy.
