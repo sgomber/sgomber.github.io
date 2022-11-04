@@ -29,7 +29,7 @@ table {
 a, table.table a {
   color: var(--global-link-color);
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: none;
   }
   &:hover:after :not(.nav-item.dropdown) {
@@ -42,6 +42,10 @@ figure, img {
 }
 
 .special {
+  color: var(--global-theme-color) !important;
+}
+
+.special-header {
   color: var(--global-theme-color) !important;
 }
 
@@ -135,7 +139,7 @@ blockquote {
   a {
     color: inherit;
     &:hover {
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
       text-decoration: none;
     }
   }
@@ -147,7 +151,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: var(--global-nav-bg-color);
   opacity: 0.95;
 }
 .navbar .dropdown-menu {
@@ -188,7 +192,7 @@ blockquote {
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
       font-weight: bolder;
-      color: var(--global-theme-color);
+      color: var(--global-active-nav-color);
       &:hover {
         color: var(--global-hover-color);
       }
@@ -204,7 +208,7 @@ blockquote {
       }
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
         }
       }
     }
@@ -269,7 +273,7 @@ blockquote {
       }
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
         }
       }
     }
@@ -292,7 +296,7 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
       text-decoration: none;
     }
   }
@@ -363,7 +367,7 @@ footer.sticky-bottom {
       color: var(--global-text-color);
       text-decoration: none;
       &:hover {
-        color: var(--global-theme-color);
+        color: var(--global-hover-color);
       }
     }
   }
@@ -381,7 +385,7 @@ footer.sticky-bottom {
       color: $white-color;
       background-color: var(--global-theme-color);
       &:hover {
-        background-color: var(--global-theme-color);
+        background-color: var(--global-hover-color);
       }
     }
   }
@@ -392,7 +396,7 @@ footer.sticky-bottom {
 
 .distill {
   a:hover {
-    border-bottom-color: var(--global-theme-color);
+    border-bottom-color: var(--global-hover-color);
     text-decoration: none;
   }
 }
@@ -406,7 +410,7 @@ footer.sticky-bottom {
 
     &:hover {
       .card-title {
-        color: var(--global-theme-color);
+        color: var(--global-hover-color);
       }
     }
   }
@@ -520,7 +524,7 @@ footer.sticky-bottom {
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           &:hover {
-            color: var(--global-theme-color);
+            color: var(--global-hover-color);
             border-color: var(--global-theme-color);
           }
         }
@@ -614,7 +618,7 @@ html.transition *:after {
       color: var(--global-text-color-light);
       text-decoration: none;
       &:hover {
-        color: var(--global-theme-color);
+        color: var(--global-hover-color);
       }
     }
   }

@@ -3,11 +3,13 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$dark-white-color};
+  --global-bg-color: #{$white-color};
+  --global-nav-bg-color: #{$dark-white-color-1};
+  --global-active-nav-color: #{$red-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$red-color};
+  --global-theme-color: #{$black-color};
   --global-hover-color: #{$red-color};
   --global-link-color: #{$link-color};
   --global-social-color: #{$grey-900};
@@ -16,7 +18,7 @@
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #{$dark-white-color-1};
+  --global-card-bg-color: #{$white-color};
 
   .fa-sun {
     display : none;
