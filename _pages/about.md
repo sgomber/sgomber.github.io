@@ -14,12 +14,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a 1st year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in applying Programming Languages concepts & Formal Methods to solve practical
+I am a 1st year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in applying Formal Methods & Programming Languages concepts to solve practical
 and exciting real-world problems.
 
-I am presently working on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/) and am also working as a Graduate Teaching Assistant for CS225: Data Structures course this fall.
+I am presently working on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/). I am also a Graduate Teaching Assistant for CS225: Data Structures course this fall.
 
-I have earlier worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, where I worked on an intersection of software engineering, low latency distributed systems & finance.
+I have earlier worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, where I worked on an intersection of low latency distributed systems, software engineering & finance.
 
 I graduated with a B. Tech. degree in Computer Science from <a href="https://www.iitg.ac.in/">IIT Guwahati</a> in May 2020. As part of my undergraduate thesis, I developed a tool named [VReadA (Visual Readablility Analyzer)](https://github.com/sgomber/VReadA), which generates a visualization of the readability of text samples, making it easier for the authors to find the less readable parts of their drafts. I was fortunate to work on this under the guidance of <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>.
 
