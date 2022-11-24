@@ -46,7 +46,12 @@ figure, img {
 }
 
 .special-header {
-  color: var(--global-theme-color) !important;
+  color: var(--global-header-color) !important;
+  font-size: x-large;
+}
+
+.highlight {
+  color: var(--global-hcolor) !important;
 }
 
 .special-font {

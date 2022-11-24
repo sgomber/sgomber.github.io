@@ -1,30 +1,32 @@
-- title: General Information
+- title: <i class="fa fa-info" aria-hidden="true"></i> General Information
   type: map
   contents:
     - name: Full Name
       value: Shaurya Gomber
     - name: Date of Birth
       value: 31st August 1998
+    - name: Email id
+      value: sgomber2@illinois.edu
     - name: Languages
       value: English, Hindi
 
-- title: Education
+- title: <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
   type: time_table
   contents:
     - title: Master's of Science in Computer Science (MS CS)
       institution: <a href="https://cs.illinois.edu/">University of Illinois, Urbana-Champaign</a>, IL, USA
       year: 2022-Present
       description:
-        - 'Focus: Programming Languages & Formal Methods'
-        - 'Key Courses: Program Verification, Trustworthy AI Systems'
-        - 'Assistantships: Graduate Teaching Assistant Fall 2022 (CS225 Data Structures)'
+        - '<span class="highlight">Focus</span>: Formal Methods & Programming Languages'
+        - '<span class="highlight">Key Courses</span>: Program Verification, Trustworthy AI Systems'
+        - '<span class="highlight">Assistantships</span>: Graduate Teaching Assistant Fall 2022 (CS225 Data Structures)'
     - title: B. Tech Computer Science and Engineering
       institution:  <a href="https://www.iitg.ac.in/">Indian Institute of Technology, Guwahati</a>, Assam, India
       year: 2016-2020
       scores: "CGPA: 9.66/10 (Class Rank: 3/88)"
       description:
-        - 'Thesis: <a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Readability Analysis of Scientific Writing</a>'
-        - 'Advisor: <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>'
+        - '<span class="highlight">Thesis</span>: <a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Readability Analysis of Scientific Writing</a>'
+        - '<span class="highlight">Advisor</span>: <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>'
         - Institute Merit Scholarship 2019 of $2800 for scoring the highest grades in the academic year 2018-19.
     - title: Senior Secondary
       institution: Jaishree Periwal High School, Jaipur, Rajasthan, India
@@ -35,7 +37,29 @@
       year: 2014
       scores: "CGPA: 10"
 
-- title: Experience
+- title: <i class="fa fa-search" aria-hidden="true"></i> Research Experience
+  type: time_table
+  contents:
+    - title: 'Inductive Synthesis of Logical Classifiers'
+      institution: <a href="https://madhu.cs.illinois.edu/">Prof. Madhusudan Parthasarathy</a>, Professor, Dept. of CSE, UIUC
+      year: SEPT 2022 - PRESENT
+      description:
+        - Given some positively and negatively labelled first order structures, we aim to find first order
+          logical formulas that fit the given data completely (i.e. satisfies all positive structures and does not
+          satisfy any negative structure).
+        - To this end, I am presently working on optimized inductive synthesis of such formulas using techniques at the intersection of Program Synthesis
+          and Constraint Solving (like Symbolic Execution and the <a href="https://github.com/Z3Prover/z3">Z3 SMT Solver</a>).
+
+    - title: 'Senior Thesis Research: “Readability Analysis of Scientific Writing”'
+      institution: <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>, Associate Professor, Dept. of CSE, IIT Guwahati
+      year: AUG 2019 - MAY 2020
+      description:
+        - Developed a tool named VReadA (Visual Readability Analyzer), which generates a heatmap to give visual feedback on a text’s readability to the author. It analyzes the text for linguistic complexity,
+          predictability, perplexity and coherence among sections.
+        - Developed novel methods to measure coherence using similarity of sentence vectors in groups of consecutive sentences and used
+          state-of-the-art Language Models, Word Vectors and NLP tools to get accurate results.
+
+- title: <i class="fa fa-briefcase" aria-hidden="true"></i> Industry Experience
   type: time_table
   contents:
     - titles: 
@@ -47,42 +71,38 @@
         - JUN 2020 - DEC 2021
       description:
         - Full Stack Development of technological and business enhancements to the firm's proprietary electronic trading system, a distributed application engineered to efficiently handle large amounts of trading data flowing throughout the day.
+        - "This included features to optimize the traders' workflows like giving them the flexibility to define new data in the UI from existing data by specifying any arbitrary computations. (Languages used: Java, Python, React)"
         - Mentoring new joinees and participating in code design & review cycles.
 
-    - title: 'Senior Thesis Research: “Readability Analysis of Scientific Writing”'
-      institution: Dr. Ashish Anand, Associate Professor, Dept. of CSE, IIT Guwahati
-      year: AUG 2019 - MAY 2020
-      description:
-        - Developed a tool named VReadA (Visual Readability Analyzer), which generates a heatmap to give visual feedback on a text’s readability to the author. It analyzes the text for linguistic complexity,
-          predictability, perplexity and coherence among sections.
-        - Developed novel methods to measure coherence using similarity of sentence vectors in groups of consecutive sentences and used
-          state-of-the-art Language Models, Word Vectors and NLP tools to get accurate results.
-
-
     - title: Software Engineering Intern
-      institution: Trading Systems Team, D.E. Shaw & Co., Hyderabad, India
+      institution: Trading Systems Team,  <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, Hyderabad, India
       year: MAY 2019 - JUL 2019
       description:
         - Implemented a high performance and type-safe functional programming API in Java to read and write trading data on the on-premise database.
         - Used the API along with the Parallel Streams in Java to get a 60x run-time improvement in production critical reports.
         - Awarded a Pre-Placement Offer (PPO) for my work at the internship.
 
-- title: Honors and Awards
+- title: <i class="fa fa-trophy" aria-hidden="true"></i> Honors and Awards
   type: time_table
   contents:
     - year: 2019
       items: 
-        - Institute Merit Scholarship 2019 of $2800 by IIT Guwahati for scoring the highest grades in the academic year 2018-19.
+        - <span class="highlight">Institute Merit Scholarship 2019</span> of $2800 by IIT Guwahati for scoring the highest grades in the academic year 2018-19.
+        - '<span class="highlight">Microsoft Code.Fun.Do ++ 2019 </span>: Among the <i>top 10 national finalists</i> out of 300+ teams. Topic: Blockchain Voting System'
 
-- title: Academic Interests
+    - year: 2018
+      items: 
+        - '<span class="highlight">ACM ICPC 2018</span>: Was part of the team that represented IIT Guwahati in India regionals held at Amritapuri, Kerela.'
+
+- title: <i class="fa fa-book" aria-hidden="true"></i> Academic Interests
   type: list
   contents:
-    - Programming Languages
     - Formal Methods
+    - Programming Languages
 
-- title: Other Interests
+- title: <i class='fas fa-table-tennis'></i> Other Interests
   type: list
   contents:
-    - Playing Table Tennis.
-    - Listening to songs.
-    - Watching movies & stand-up comedy.
+    - Playing Table Tennis
+    - Listening to songs
+    - Watching movies & stand-up comedy
