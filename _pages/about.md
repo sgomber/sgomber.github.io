@@ -17,7 +17,7 @@ social: true  # includes social icons at the bottom of the page
 I am a 1st year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in applying Formal Methods & Programming Languages concepts to solve practical
 and exciting real-world problems.
 
-I am presently working on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/). I am also a Graduate Teaching Assistant for CS225: Data Structures course this fall.
+I am presently working on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/). I am also a Graduate Teaching Assistant for CS421: Programming Languages & Compilers course this semester (Spring 2023).
 
 I have earlier worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, where I worked on an intersection of low latency distributed systems, software engineering & finance.
 

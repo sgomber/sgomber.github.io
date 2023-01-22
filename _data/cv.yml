@@ -16,11 +16,15 @@
     - title: Master's of Science in Computer Science (MS CS)
       institution: <a href="https://cs.illinois.edu/">University of Illinois, Urbana-Champaign</a>, IL, USA
       year: 2022-Present
-      scores: "CGPA: 4/4"
+      scores: "CGPA: 4.0/4.0"
       description:
         - '<span class="highlight">Focus</span>: Formal Methods & Programming Languages'
         - '<span class="highlight">Key Courses</span>: Program Verification (A+), Trustworthy AI Systems (A+)'
-        - '<span class="highlight">Assistantships</span>: Graduate Teaching Assistant Fall 2022 (CS225 Data Structures)'
+        - '<span class="highlight">Assistantships</span>: 
+        <ul>
+        <li>Spring 23: Teaching Assisstant, CS421: Programming Languages & Compilers
+        <li>Fall 22: Teaching Assisstant, CS225: Data Structures
+        </ul>'
     - title: B. Tech Computer Science and Engineering
       institution:  <a href="https://www.iitg.ac.in/">Indian Institute of Technology, Guwahati</a>, Assam, India
       year: 2016-2020
@@ -28,7 +32,7 @@
       description:
         - '<span class="highlight">Thesis</span>: <a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Readability Analysis of Scientific Writing</a>'
         - '<span class="highlight">Advisor</span>: <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>'
-        - Institute Merit Scholarship 2019 of $2800 for scoring the highest grades in the academic year 2018-19.
+        - '<span class="highlight">Scholarships</span>: Institute Merit Scholarship 2019 of $2800 for scoring the highest grades in the academic year 2018-19.'
     - title: Senior Secondary
       institution: Jaishree Periwal High School, Jaipur, Rajasthan, India
       year: 2016
