@@ -5,5 +5,5 @@ title: cv
 description: My life journey!
 nav: true
 nav_order: 3
-cv_pdf: CV.pdf
+resume_pdf: Shaurya_Gomber_Resume.pdf
 ---
