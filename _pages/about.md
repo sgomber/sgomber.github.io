@@ -14,13 +14,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a 1st year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in applying Formal Methods & Programming Languages concepts to solve practical
-and exciting real-world problems.
+I am a 2nd year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in the real-world applications of Formal Methods and Programming Languages concepts, including areas like Automated Reasoning, SMT Solvers & Neuro-symbolic AI.
 
-I am presently working on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/). I am also a Graduate Teaching Assistant for CS421: Programming Languages & Compilers course this semester (Spring 2023).
+I am presently working on logic guided learning methods under the guidance of [Prof. Gagandeep Singh](https://ggndpsngh.github.io/). I am also a Graduate Teaching Assistant for CS421: Programming Languages & Compilers course this semester (Fall 2023). I have also worked on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/).
 
-I have earlier worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a>, where I worked on an intersection of low latency distributed systems, software engineering & finance.
+I was an Applied Science intern at Amazon Science this summer (2023). I worked with the Zelkova team ([Automated Reasoning Group @ AWS](https://www.amazon.science/blog/a-billion-smt-queries-a-day#:~:text=invited%20paper.-,Zelkova,-At%20Amazon%2C%20we)) on encoding verification queries in SMTO (SMT with Oracles) for the cases that could
+not be encoded in SMT.
 
-I graduated with a B. Tech. degree in Computer Science from <a href="https://www.iitg.ac.in/">IIT Guwahati</a> in May 2020. As part of my undergraduate thesis, I developed a tool named [VReadA (Visual Readablility Analyzer)](https://github.com/sgomber/VReadA), which generates a visualization of the readability of text samples, making it easier for the authors to find the less readable parts of their drafts. I was fortunate to work on this under the guidance of <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>.
+Before my MS, I graduated with a B. Tech. degree in Computer Science from <a href="https://www.iitg.ac.in/">IIT Guwahati</a> in May 2020 (<a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Thesis</a> under <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>). I then worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a> for two years, where I worked on an intersection of low latency distributed systems, software engineering & finance. 
 
-In my free time, I love to play Table Tennis, listen to songs and watch movies & stand-up comedy. I am a passionate cricket follower, so if you find me recalling and remembering obscure cricket facts and records, then don't worry, I am fine, its just the cricket buff inside me!
+In my free time, I love to play Lawn Tennis & Table Tennis and listen to songs. I am a passionate cricket follower, so if you find me recalling and remembering obscure cricket facts and records, then don't worry, I am fine, its just the cricket buff inside me!
