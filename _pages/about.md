@@ -11,7 +11,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 I am a 2nd year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in the real-world applications of Formal Methods and Programming Languages concepts, including areas like Automated Reasoning, SMT Solvers & Neuro-symbolic AI.

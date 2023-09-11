@@ -37,6 +37,10 @@ layout: default
             {{ content }}
           </div>
 
+          {%- unless page.social %}
+            {%- include social_lite.html %}
+          {%- endunless %}
+
           {%- include affiliations.html %}
 
           {% if page.news -%}
