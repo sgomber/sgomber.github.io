@@ -37,6 +37,8 @@ layout: default
             {{ content }}
           </div>
 
+          {%- include affiliations.html %}
+
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}
