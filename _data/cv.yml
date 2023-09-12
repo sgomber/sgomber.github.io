@@ -19,9 +19,10 @@
       scores: "CGPA: 4.0/4.0"
       description:
         - '<span class="highlight">Focus</span>: Formal Methods & Programming Languages'
-        - '<span class="highlight">Key Courses</span>: Program Verification (A+), Trustworthy AI Systems (A+)'
+        - '<span class="highlight">Key Courses</span>: Formal Methods for Software Development (A+), Program Verification (A+), Trustworthy AI Systems (A+)'
         - '<span class="highlight">Assistantships</span>: 
         <ul>
+        <li>Fall 23: Teaching Assisstant, CS421: Programming Languages & Compilers
         <li>Spring 23: Teaching Assisstant, CS421: Programming Languages & Compilers
         <li>Fall 22: Teaching Assisstant, CS225: Data Structures
         </ul>'
@@ -47,12 +48,12 @@
   contents:
     - title: 'Inductive Synthesis of Logical Classifiers'
       institution: <a href="https://madhu.cs.illinois.edu/">Prof. Madhusudan Parthasarathy</a>, Professor, Dept. of CSE, UIUC
-      year: SEPT 2022 - PRESENT
+      year: SEPT 2022 - APR 2023
       description:
         - Given some positively and negatively labelled first order structures, we aim to find first order
           logical formulas that fit the given data completely (i.e. satisfies all positive structures and does not
           satisfy any negative structure).
-        - To this end, I am presently working on optimized inductive synthesis of such formulas using techniques at the intersection of Program Synthesis
+        - To this end, I worked on optimized inductive synthesis of such formulas using techniques at the intersection of Program Synthesis
           and Constraint Solving (like Symbolic Execution and the <a href="https://github.com/Z3Prover/z3">Z3 SMT Solver</a>).
 
     - title: 'Senior Thesis Research: “Readability Analysis of Scientific Writing”'
@@ -63,6 +64,7 @@
           predictability, perplexity and coherence among sections.
         - Developed novel methods to measure coherence using similarity of sentence vectors in groups of consecutive sentences and used
           state-of-the-art Language Models, Word Vectors and NLP tools to get accurate results.
+        - 'Thesis Link: <a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Readability Analysis of Scientific Writing</a>'
 
 - title: <i class="fa fa-briefcase" aria-hidden="true"></i> Industry Experience
   type: time_table
@@ -102,12 +104,14 @@
 - title: <i class="fa fa-book" aria-hidden="true"></i> Academic Interests
   type: list
   contents:
-    - Formal Methods
-    - Programming Languages
+    - Automated Reasoning
+    - SAT/SMT Solving
+    - Neuro-symbolic AI
+    - Formal Verification
 
 - title: <i class='fas fa-table-tennis'></i> Other Interests
   type: list
   contents:
-    - Playing Table Tennis
+    - Playing Lawn Tennis & Table Tennis
     - Listening to songs
-    - Watching movies & stand-up comedy
+    - Watching stand-up comedy & cricket
