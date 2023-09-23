@@ -18,8 +18,7 @@ I am a 2nd year Masters in Computer Science (MS CS) student at the [University o
 
 I am presently working on logic guided learning methods under the guidance of [Prof. Gagandeep Singh](https://ggndpsngh.github.io/). I am also a Graduate Teaching Assistant for CS421: Programming Languages & Compilers course this semester (Fall 2023). I have also worked on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/).
 
-I was an Applied Science intern at Amazon Science this summer (2023). I worked with the Zelkova team ([Automated Reasoning Group @ AWS](https://www.amazon.science/blog/a-billion-smt-queries-a-day#:~:text=invited%20paper.-,Zelkova,-At%20Amazon%2C%20we)) on encoding verification queries in SMTO (SMT with Oracles) for the cases that could
-not be encoded in SMT.
+I was an Applied Science intern at Amazon Science this summer (2023). I worked with the Zelkova team ([Automated Reasoning Group @ AWS](https://www.amazon.science/blog/a-billion-smt-queries-a-day#:~:text=invited%20paper.-,Zelkova,-At%20Amazon%2C%20we)) on encoding verification queries in SMTO (SMT with Oracles) for the cases that involved type-casting and reasoning about equality and inequality of variables of different types (say reasoning about the numeric value of a string like "42"), and are not easily encodeable in SMT.
 
 Before my MS, I graduated with a B. Tech. degree in Computer Science from <a href="https://www.iitg.ac.in/">IIT Guwahati</a> in May 2020 (<a href="/assets/pdf/Senior_Thesis.pdf" target="_blank">Thesis</a> under <a href="https://www.iitg.ac.in/anand.ashish/">Dr. Ashish Anand</a>). I then worked as a software engineer (SDE-2) in the Trading Systems team at <a href="https://www.deshawindia.com/">D. E. Shaw & Co</a> for two years, where I worked on an intersection of low latency distributed systems, software engineering & finance. 
 
