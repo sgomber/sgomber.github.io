@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a 2nd year Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in the real-world applications of Formal Methods and Programming Languages concepts, including areas like Automated Reasoning, SMT Solvers & Neuro-symbolic AI.
+I am a 2nd year thesis-track Masters in Computer Science (MS CS) student at the [University of Illinois, Urbana-Champaign](https://cs.illinois.edu/). I am interested in the real-world applications of Formal Methods and Programming Languages concepts, including areas like Automated Reasoning, SMT Solvers & Neuro-symbolic AI.
 
 I am presently working on logic guided learning methods under the guidance of [Prof. Gagandeep Singh](https://ggndpsngh.github.io/). I am also a Graduate Teaching Assistant for CS421: Programming Languages & Compilers course this semester (Fall 2023). I have also worked on inductive synthesis of logical classifiers under the guidance of [Prof. Madhusudan Parthasarathy](https://madhu.cs.illinois.edu/).
 
