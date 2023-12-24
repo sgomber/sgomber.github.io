@@ -6,7 +6,7 @@ venue: Planned for submission at <a href="http://i-cav.org/2024/">CAV '24</a>
 authors: Shaurya Gomber, Kevin Cheang, Dejan Jovanovic, Andrew Reynolds, Amit Goel
 slides: 
 poster: 
-tldr: Developed efficient oracles and SMTO encodings to encode type-casting semantics in SMT.
+tldr: Developed efficient oracles and <a href="https://arxiv.org/pdf/2107.13477.pdf">SMTO</a> encodings to encode type-casting semantics in SMT.
 link: 
 code: 
 ---
