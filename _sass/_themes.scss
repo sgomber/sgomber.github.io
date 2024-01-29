@@ -4,15 +4,16 @@
  
 :root {
   --global-bg-color: #{$white-color};
-  --global-nav-bg-color: #{$dark-white-color-1};
-  --global-active-nav-color: #{$red-color};
+  --global-nav-bg-color: #{$blue-color};
+  --global-active-nav-color: #{$yellow-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
+  --global-nav-text-color: #{$white-color};
   --global-text-color-light: #{$grey-color};
   --global-hcolor: #{$red-color-dark};
   --global-theme-color: #{$black-color};
-  --global-header-color: #{$red-color};
-  --global-hover-color: #{$red-color};
+  --global-header-color: #{$black-color};
+  --global-hover-color: #{$yellow-color};
   --global-link-color: #{$link-color};
   --global-social-color: #{$grey-900};
   --global-footer-bg-color: #{$grey-color-dark};
