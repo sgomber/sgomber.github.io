@@ -7,9 +7,7 @@ $(document).ready(function() {
     });
 
     $('a').filter(function() {
-        console.log(this);
         const classList = $(this).attr('class') ? $(this).attr('class').split(' ') : [];
-        console.log(classList);
     
         return !classList.some(function(className) {
             return className.startsWith('nav');
