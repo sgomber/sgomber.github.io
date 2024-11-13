@@ -7,7 +7,11 @@ $(document).ready(function() {
     });
 
     $('a').filter(function() {
-        return !$(this).attr('class').split(' ').some(function(className) {
+        console.log(this);
+        const classList = $(this).attr('class') ? $(this).attr('class').split(' ') : [];
+        console.log(classList);
+    
+        return !classList.some(function(className) {
             return className.startsWith('nav');
         });
     }).attr({
