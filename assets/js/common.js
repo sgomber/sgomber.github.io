@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     $('a').filter(function() {
-        return this.hostname !== window.location.hostname;
+        return !$(this).attr('class')?.startsWith('nav');
     }).attr({
         'target': '_blank',
         'rel': 'noopener noreferrer'
