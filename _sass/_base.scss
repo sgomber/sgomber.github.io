@@ -5,7 +5,7 @@
 // Typography
 
 body {
-  // font-family: 'Inconsolata', monospace;
+//   font-family: 'Georgia', monospace;
   font-family: 'Tahoma';
 }
 
@@ -46,7 +46,7 @@ figure, img {
 }
 
 .nav-title-col {
-  color: var(--global-active-nav-color) !important;
+  color: $dark-white-color !important;
   font-size: x-large;
 }
 
@@ -64,8 +64,20 @@ figure, img {
 }
 
 .special-font {
-font-family: 'Trebuchet MS', sans-serif;
+    color: var(--global-nav-bg-color) !important;
+    font-weight: 550;
+    font-size: 1.4rem;
 }
+
+.author-font {
+    // color: var(--global-nav-bg-color) !important;
+    // font-weight: 500;
+    text-decoration: underline
+}
+
+// .author-font::after {
+//     content: "*";
+// }
 
 blockquote {
   background: var(--global-bg-color);
@@ -321,6 +333,18 @@ footer.sticky-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
+}
+
+.list-group-item {
+    background-color: $white-color;
+    border: 1px solid black;
+    margin-bottom: 2px;
+
+    .badge {
+      color: var(--global-text-color) !important;
+      background-color: var(--global-card-bg-color) !important;
+      border: 1px solid var(--global-text-color) !important;
+    }
 }
 
 // CV

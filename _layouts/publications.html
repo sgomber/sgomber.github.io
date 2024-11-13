@@ -5,34 +5,67 @@ layout: default
 <div class="post">
 
     <header class="post-header">
-      <h1 class="post-title special-col">{{ page.pg_title }}</h1>
-      <p class="post-description">{{ page.description }}</p>
+      <h1 class="post-title special-col" style="font-size : 1.7rem;">Preprints</h1>
     </header>
+    <br>
 
     <ul class="list-group">
-        {%- assign publications = site.publications | reverse -%} 
-        {% for publication in publications %} 
+        {%- assign preprints = site.publications | reverse | where: "type", "preprint"-%} 
+        {% for publication in preprints %} 
+        <li class="list-group-item">
+            <h5 class="title special-font">
+                {{publication.title}}
+            </h5>
+            <h6 style="font-size: 1rem;">
+                {{publication.authors}}
+            </h6>
+            {% if publication.venue %}
+                <h6 style="font-weight: 600; font-size: 1rem;">
+                    {{ publication.venue }}
+                </h6>
+            {% endif %}
 
-        <li class="list-group-item border-top-0 border-left-0 border-right-0">
-            <h5 class="title font-weight-bold special-font">{{publication.title}}</h5>
-            <!-- <h6 style="font-size: 0.95rem;">Date: {{ publication.date | date: "%b %-d, %Y" }}</h6> -->
-            <p><i>{{ publication.authors }}</i></p>
-            <h6 style="font-size : 0.95rem;">{{ publication.venue }}</h6>
-            <p> <b>TLDR:</b> {{ publication.tldr }} </p>
-            {% if publication.link %}
-            <a href="{{ publication.link }}" target="_blank" rel="noopener noreferrer">Paper Link</a>
-            {% endif %}
-            {% if publication.code %} |
-            <a href="{{ publication.code }}" target="_blank" rel="noopener noreferrer">Code</a>
-            {% endif %}
-            {% if publication.slides %} |
-            <a href="{{ publication.slides }}" target="_blank" rel="noopener noreferrer">Slides</a>
-            {% endif %}
-            {% if publication.poster %} |
-            <a href="{{ publication.poster }}" target="_blank" rel="noopener noreferrer">Poster </a>
-            {% endif %}
+            {% assign links = publication.links | size %}
+            {% for link in publication.links %}
+              <a href="{{ link.url }}" target="_blank" style="font-weight: 450;">{{ link.name }}</a>
+              {% if forloop.index < links %}
+                | 
+              {% endif %}
+            {% endfor %}
         </li>
-      {%- endfor %}
-      </ul>
+        {%- endfor %}
+    </ul>
 
+    <br>
+    <header class="post-header">
+        <h1 class="post-title special-col" style="font-size : 1.7rem;">Workshops & Posters</h1>
+      </header>
+      <br>
+  
+      <ul class="list-group">
+          {%- assign workshops = site.publications | reverse | where: "type", "workshop"-%} 
+          {% for publication in workshops %} 
+          <li class="list-group-item">
+            <h5 class="title special-font">
+                {{publication.title}}
+            </h5>
+            <h6 style="font-size: 1rem;">
+                {{publication.authors}}
+            </h6>
+            {% if publication.venue %}
+                <h6 style="font-weight: 600; font-size: 1rem;">
+                    {{ publication.venue }}
+                </h6>
+            {% endif %}
+
+            {% assign links = publication.links | size %}
+            {% for link in publication.links %}
+              <a href="{{ link.url }}" target="_blank" style="font-weight: 450;">{{ link.name }}</a>
+              {% if forloop.index < links %}
+                | 
+              {% endif %}
+            {% endfor %}
+        </li>
+        {%- endfor %}
+      </ul>
 </div>

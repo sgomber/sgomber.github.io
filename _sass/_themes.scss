@@ -3,8 +3,8 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$white-color};
-  --global-nav-bg-color: #{$blue-color};
+  --global-bg-color: #{$dark-white-color};
+  --global-nav-bg-color: #{$deep-navy-blue-color};
   --global-active-nav-color: #{$yellow-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
@@ -22,6 +22,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
+  --global-auth-color: #{$orange-color};
 
   .fa-sun {
     display : none;
