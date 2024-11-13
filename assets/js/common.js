@@ -5,6 +5,13 @@ $(document).ready(function() {
     $('a.bibtex').click(function() {
         $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
     });
-    $('a').attr('target', '_blank');
+
+    $('a').filter(function() {
+        return this.hostname !== window.location.hostname;
+    }).attr({
+        'target': '_blank',
+        'rel': 'noopener noreferrer'
+    });
+
     $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
 });
