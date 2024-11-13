@@ -7,7 +7,9 @@ $(document).ready(function() {
     });
 
     $('a').filter(function() {
-        return !$(this).attr('class')?.startsWith('nav');
+        return !$(this).attr('class').split(' ').some(function(className) {
+            return className.startsWith('nav');
+        });
     }).attr({
         'target': '_blank',
         'rel': 'noopener noreferrer'
