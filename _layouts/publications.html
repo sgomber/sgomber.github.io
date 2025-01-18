@@ -5,100 +5,23 @@ layout: default
 <div class="post">
 
     <header class="post-header">
-      <h1 class="post-title special-col" style="font-size : 1.7rem;">Preprints</h1>
+        <h1 class="post-title special-col" style="font-size : 1.7rem;">Preprints</h1>
     </header>
     <br>
-
-    <ul class="list-group">
-        {%- assign preprints = site.publications | reverse | where: "type", "preprint"-%} 
-        {% for publication in preprints %} 
-        <li class="list-group-item">
-            <h5 class="title special-font">
-                {{publication.title}}
-            </h5>
-            <h6 style="font-size: 1rem;">
-                {{publication.authors}}
-            </h6>
-            {% if publication.venue %}
-                <h6 style="font-weight: 600; font-size: 1rem;">
-                    {{ publication.venue }}
-                </h6>
-            {% endif %}
-
-            {% assign links = publication.links | size %}
-            {% for link in publication.links %}
-              <a href="{{ link.url }}" style="font-weight: 450;">{{ link.name }}</a>
-              {% if forloop.index < links %}
-                | 
-              {% endif %}
-            {% endfor %}
-        </li>
-        {%- endfor %}
-    </ul>
-
+    {% include publication-list.html type="preprint" %}
+    
     <br>
     <header class="post-header">
         <h1 class="post-title special-col" style="font-size : 1.7rem;">Workshops & Posters</h1>
-      </header>
-      <br>
-  
-      <ul class="list-group">
-          {%- assign workshops = site.publications | reverse | where: "type", "workshop"-%} 
-          {% for publication in workshops %} 
-          <li class="list-group-item">
-            <h5 class="title special-font">
-                {{publication.title}}
-            </h5>
-            <h6 style="font-size: 1rem;">
-                {{publication.authors}}
-            </h6>
-            {% if publication.venue %}
-                <h6 style="font-weight: 600; font-size: 1rem;">
-                    {{ publication.venue }}
-                </h6>
-            {% endif %}
+    </header>
+    <br>
+    {% include publication-list.html type="workshop" %}
 
-            {% assign links = publication.links | size %}
-            {% for link in publication.links %}
-              <a href="{{ link.url }}" style="font-weight: 450;">{{ link.name }}</a>
-              {% if forloop.index < links %}
-                | 
-              {% endif %}
-            {% endfor %}
-        </li>
-        {%- endfor %}
-      </ul>
-
-      <br>
+    <br>
     <header class="post-header">
         <h1 class="post-title special-col" style="font-size : 1.7rem;">Theses</h1>
-      </header>
-      <br>
-  
-      <ul class="list-group">
-          {%- assign theses = site.publications | reverse | where: "type", "thesis"-%} 
-          {% for publication in theses %} 
-          <li class="list-group-item">
-            <h5 class="title special-font">
-                {{publication.title}}
-            </h5>
-            <h6 style="font-size: 1rem;">
-                {{publication.authors}}
-            </h6>
-            {% if publication.venue %}
-                <h6 style="font-weight: 600; font-size: 1rem;">
-                    {{ publication.venue }}
-                </h6>
-            {% endif %}
+    </header>
+    <br>
+    {% include publication-list.html type="thesis" %}
 
-            {% assign links = publication.links | size %}
-            {% for link in publication.links %}
-              <a href="{{ link.url }}" style="font-weight: 450;">{{ link.name }}</a>
-              {% if forloop.index < links %}
-                | 
-              {% endif %}
-            {% endfor %}
-        </li>
-        {%- endfor %}
-      </ul>
 </div>

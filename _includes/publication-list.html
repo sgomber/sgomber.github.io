@@ -1,0 +1,31 @@
+<ul class="list-group">
+    {%- assign publications = site.publications | reverse | where: "type", include.type -%}
+    {% for publication in publications %}
+    <li class="list-group-item">
+        <h5 class="title special-font">
+            {{ publication.title }}
+        </h5>
+        <h6 style="font-size: 1rem;">
+            {{ publication.authors }}
+        </h6>
+        {% if publication.venue %}
+            <h6 style="font-weight: 600; font-size: 1rem;">
+                {{ publication.venue }}
+            </h6>
+        {% endif %}
+        {% if publication.award %}
+            <span style="display: flex; align-items: center; gap: 5px; font-size: 0.9rem; color: #6c757d;">
+                <span style="font-size: 1.3rem; color: #f8d775;">🏆</span>
+                <span style="font-size: 1.05rem; font-weight: 600; color: #292c30">{{ publication.award }}</span>
+            </span>
+        {% endif %}
+        <div class="card-links" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+            {% for link in publication.links %}
+                <a href="{{ link.url }}" style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                    {{ link.name }}
+                </a>
+            {% endfor %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
