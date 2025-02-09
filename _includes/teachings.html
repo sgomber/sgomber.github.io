@@ -1,0 +1,41 @@
+<header class="post-header">
+    <h1 class="post-title special-col" style="font-size: 1.7rem;">Teaching</h1>
+</header>
+<br>
+
+{%- assign grouped_teaching = site.teaching | group_by: "title" -%}
+
+<!-- Step 1: Extract the latest date for each title -->
+{%- assign enriched_teaching = "" | split: "" -%}
+{% for group in grouped_teaching %}
+    {%- assign sorted_items = group.items | sort: "date" | reverse -%}
+    {%- assign latest_date = sorted_items.first.date -%}
+    {%- assign enriched_teaching = enriched_teaching | push: group | merge: latest_date -%}
+{% endfor %}
+
+<!-- Step 2: Sort teaching groups by latest date -->
+{%- assign sorted_teaching = enriched_teaching | sort: "latest_date" | reverse -%}
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <ul class="list-unstyled mb-0">
+            {% for group in sorted_teaching %}
+                {%- assign sorted_items = group.items | sort: "date" | reverse -%}
+                <li style="display: flex; justify-content: space-between; align-items: center;">
+                    <span class="special-font" style="font-size: 1.1rem; flex: 1;">{{ group.name }}</span>
+                    <span>
+                        {% for teach in sorted_items %}
+                            {% if teach.link %}
+                                <a href="{{ teach.link }}" target="_blank">{{ teach.semester }}</a>
+                            {% else %}
+                                {{ teach.semester }}
+                            {% endif %}
+                            {% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
+

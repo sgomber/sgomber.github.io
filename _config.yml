@@ -123,6 +123,12 @@ collections:
     output: false
   publications:
     output: false
+  awards:
+    output: false
+  services:
+    output: false
+  teaching:
+    output: false
 news_limit: 6
 
 # -----------------------------------------------------------------------------

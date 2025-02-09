@@ -1,0 +1,27 @@
+<header class="post-header">
+    <h1 class="post-title special-col" style="font-size: 1.7rem;">Awards</h1>
+</header>
+<br>
+
+{%- assign awards = site.awards | reverse -%}
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <ul class="list-unstyled mb-0">
+            {% for award in awards %}
+            <li style="display: flex; align-items: center; justify-content: space-between;">
+                <span class="special-font" style="font-size: 1.2rem; flex: 1;">{{ award.title }}
+                {% if award.link %}
+                <a href="{{ award.link }}" target="_blank" style="text-decoration: none; font-size: 1.2rem;">
+                    <i class="fas fa-external-link-alt fa-xs"></i>
+                </a>                
+                {% endif %}
+            </span> 
+                <span style="display: flex; align-items: center; gap: 12px; white-space: nowrap;">
+                    <span style="font-size: 1.1rem;">{{ award.year }}</span>
+                </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
