@@ -11,8 +11,14 @@
             {% for group in grouped_services %}
             <li>
                 <strong class="special-font" style="font-size: 1.3rem;">{{ group.name }}:</strong>
-                {% for item in group.items %}
-                {{ item.name }}{% unless forloop.last %}, {% endunless %}
+                {% assign sorted_items = group.items | sort: "date" | reverse %}
+                {% for item in sorted_items %}
+                {% if item.link %}
+                    <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                {% else %}
+                    {{ item.name }}
+                {% endif %}
+                {% unless forloop.last %}, {% endunless %}
                 {% endfor %}
             </li>
             {% endfor %}
