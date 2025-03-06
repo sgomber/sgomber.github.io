@@ -19,19 +19,40 @@
                 <span style="font-size: 1.05rem; font-weight: 600; color: #292c30">{{ publication.award }}</span>
             </span>
         {% endif %}
-        <div class="card-links" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
-            {% for link in publication.links %}
-                {% assign link_url = link.url %}
-                {% if link_url contains "https" %}
-                    {% assign final_url = link_url %}
-                {% else %}
-                    {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
-                {% endif %}
-                <a href="{{ final_url }}" style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
-                    {{ link.name }}
+
+        <!-- Button Section -->
+        <div style="margin-top: 10px;">
+            <div class="card-links" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                {% if publication.abstract %}
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#abstract-{{ forloop.index }}" aria-expanded="false" aria-controls="abstract-{{ forloop.index }}"
+                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                    Abstract
                 </a>
-            {% endfor %}
+                {% endif %}
+                
+                {% for link in publication.links %}
+                    {% assign link_url = link.url %}
+                    {% if link_url contains "https" %}
+                        {% assign final_url = link_url %}
+                    {% else %}
+                        {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
+                    {% endif %}
+                    <a href="{{ final_url }}" style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                        {{ link.name }}
+                    </a>
+                {% endfor %}
+            </div>
+
+            <!-- Collapsible Abstract with Improved Styling -->
+            {% if publication.abstract %}
+            <div class="collapse mt-2" id="abstract-{{ forloop.index }}">
+                <p class="abstract-text" style="font-size: 0.95rem; margin-top: 5px; line-height: 1.5; text-align: justify; border-left: 4px solid #3498db; padding-left: 10px;">
+                    {{ publication.abstract }}
+                </p>
+            </div>
+            {% endif %}
         </div>
+        
     </li>
     {% endfor %}
 </ul>
