@@ -10,7 +10,7 @@
         </h6>
         {% if publication.venue %}
             <h6 style="font-weight: 600; font-size: 1rem;">
-                {{ publication.venue }}
+                {{ publication.venue | join: " • " }}
             </h6>
         {% endif %}
         {% if publication.award %}
@@ -21,7 +21,13 @@
         {% endif %}
         <div class="card-links" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
             {% for link in publication.links %}
-                <a href="{{ link.url }}" style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                {% assign link_url = link.url %}
+                {% if link_url contains "https" %}
+                    {% assign final_url = link_url %}
+                {% else %}
+                    {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
+                {% endif %}
+                <a href="{{ final_url }}" style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
                     {{ link.name }}
                 </a>
             {% endfor %}
