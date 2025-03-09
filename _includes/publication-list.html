@@ -2,6 +2,8 @@
     {%- assign publications = site.publications | reverse | where: "type", include.type -%}
     {% for publication in publications %}
     {% assign abstract_id = "abstract-" | append: forloop.index0 | append: "-" | append: publication.title | slugify %}
+    {% assign bibtex_id = "bibtex-" | append: forloop.index0 | append: "-" | append: publication.title | slugify %}
+    
     <li class="list-group-item">
         <h5 class="title special-font">
             {{ publication.title }}
@@ -42,9 +44,16 @@
                         {{ link.name }}
                     </a>
                 {% endfor %}
+
+                {% if publication.bibtex %}
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#{{ bibtex_id }}" aria-expanded="false" aria-controls="{{ bibtex_id }}"
+                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+                    BibTeX
+                </a>
+                {% endif %}
+
             </div>
 
-            <!-- Collapsible Abstract with Unique ID -->
             {% if publication.abstract %}
             <div class="collapse mt-2" id="{{ abstract_id }}">
                 <p class="abstract-text" style="font-size: 0.95rem; margin-top: 5px; line-height: 1.5; text-align: justify; border-left: 4px solid #3498db; padding-left: 10px;">
@@ -52,8 +61,14 @@
                 </p>
             </div>
             {% endif %}
+
+            {% if publication.bibtex %}
+            <div class="collapse mt-2" id="{{ bibtex_id }}" style="font-size: 0.95rem; margin-top: 5px; line-height: 1.5; text-align: justify; border-left: 4px solid #3498db; padding-left: 10px;">
+            {{ publication.bibtex | newline_to_br }}
+            </div>
+            {% endif %}
+            
         </div>
-        
     </li>
     {% endfor %}
 </ul>

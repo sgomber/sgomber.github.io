@@ -13,4 +13,15 @@ abstract: >
 links:
   - name: "Arxiv"
     url: "https://arxiv.org/abs/2404.05951"
+
+bibtex: >
+    @misc{syndicate_arxiv,
+        title={Syndicate: Synergistic Synthesis of Ranking Function and Invariants for Termination Analysis}, 
+        author={Yasmin Sarita and Avaljot Singh and Shaurya Gomber and Gagandeep Singh and Mahesh Vishwanathan},
+        year={2024},
+        eprint={2404.05951},
+        archivePrefix={arXiv},
+        primaryClass={cs.LO},
+        url={https://arxiv.org/abs/2404.05951}, 
+    }
 ---
