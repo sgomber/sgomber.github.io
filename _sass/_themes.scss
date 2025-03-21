@@ -3,7 +3,7 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$dark-white-color};
+  --global-bg-color: #{$white-color};
   --global-nav-bg-color: #{$deep-navy-blue-color};
   --global-active-nav-color: #{$yellow-color};
   --global-code-bg-color: #{$code-bg-color-light};
@@ -12,7 +12,8 @@
   --global-text-color-light: #{$grey-color};
   --global-hcolor: #{$red-color-dark};
   --global-theme-color: #{$black-color};
-  --global-header-color: #{$black-color};
+  --global-header-color: #1e3a5f;
+  --global-sf-color: #{$blue-color-dark};
   --global-hover-color: #{$yellow-color};
   --global-link-color: #{$link-color};
   --global-social-color: #{$grey-900};

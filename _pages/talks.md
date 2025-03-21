@@ -2,7 +2,7 @@
 layout: talks
 permalink: /talks/
 nav: true
-title: Talks
+title: talks
 
 pg_title: Talks
 ---
