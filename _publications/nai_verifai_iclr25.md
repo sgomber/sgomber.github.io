@@ -15,4 +15,14 @@ links:
     url: "VerifAI_ICLR_25_NAI.pdf"
   - name: "Poster"
     url: "NAI_SRC_Poster.pdf"
+
+bibtex: >
+    @inproceedings{
+        gomber2025neural,
+        title={Neural Abstract Interpretation},
+        author={Shaurya Gomber and Gagandeep Singh},
+        booktitle={ICLR 2025 Workshop: VerifAI: AI Verification in the Wild},
+        year={2025},
+        url={https://openreview.net/forum?id=WTyyhWhp4m}
+    }
 ---
