@@ -2,7 +2,7 @@
 layout: publications
 type: preprint
 
-title: "Syndicate: Synergistic Synthesis of Ranking Function and Invariants for Termination Analysis"
+title: "Efficient Ranking Function-Based Termination Analysis with Bi-Directional Feedback"
 authors: "Yasmin Chandini Sarita, Avaljot Singh, <span class=author-font>Shaurya Gomber</span>, Gagandeep Singh, Mahesh Viswanathan"
 date: 2023-11-19
 venue: 
@@ -16,7 +16,7 @@ links:
 
 bibtex: >
     @misc{syndicate_arxiv,
-        title={Syndicate: Synergistic Synthesis of Ranking Function and Invariants for Termination Analysis}, 
+        title={Efficient Ranking Function-Based Termination Analysis with Bi-Directional Feedback}, 
         author={Yasmin Sarita and Avaljot Singh and Shaurya Gomber and Gagandeep Singh and Mahesh Vishwanathan},
         year={2024},
         eprint={2404.05951},
