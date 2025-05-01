@@ -49,17 +49,8 @@ figure, img {
 }
 
 .nav-title-col {
-  color: $dark-white-color !important;
-  font-size: x-large;
-}
-
-.special-col {
-  color: var(--global-header-color) !important;
-}
-
-.special-header {
-  color: var(--global-header-color) !important;
-  font-size: x-large;
+  color: var(--global-theme-color) !important;
+//   font-size: x-large;
 }
 
 .highlight {
@@ -71,11 +62,6 @@ figure, img {
     font-weight: 560;
     color: #003366; /* Professional academic blue */
     margin-bottom: 5px;
-}
-
-.author-font {
-    text-decoration: underline;
-    font-style: italic;
 }
 
 blockquote {
@@ -175,9 +161,9 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1.5px solid var(--global-divider-color);
   background-color: var(--global-nav-bg-color);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -335,8 +321,8 @@ footer.sticky-bottom {
 }
 
 .list-group-item {
-    background-color: #f5f5f5;
-    border: 2px solid #ddd;
+    background-color: transparent; /* no background */
+    border: none;                  /* no full border */
     margin-bottom: 10px;
 
     .badge {
@@ -344,10 +330,6 @@ footer.sticky-bottom {
       background-color: var(--global-card-bg-color) !important;
       border: 1px solid var(--global-text-color) !important;
     }
-}
-
-.list-group-item:not(:first-child) {
-    border-top: 2px solid #ddd; /* Adds a blue top border for distinction */
 }
 
 // CV
@@ -669,4 +651,78 @@ html.transition *:after {
       padding: 8px;
     }
   }
+}
+
+//
+// General custom styles
+//
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 550;
+    margin-top: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.section-title-mid {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 550;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+//
+// Publication specific styles
+//
+
+.paper-title {
+    color: var(--global-header-color);
+    font-family: 'Source Sans Pro';
+    font-weight: 590;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+// .author-font {
+//     font-weight: bold;
+// }
+
+.authors {
+    font-size: 0.88rem;
+}
+
+.venue {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.paper-links {
+    font-size: 0.9rem;
+    padding-top: 2px;
+}
+
+.paper-links a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.9px;
+    text-underline-offset: 2px;
+    margin-right: 0.05em;
+    margin-left: 0.05em;
+}
+
+.paper-links a:hover {
+    color: var(--global-hover-color);
+}
+
+//
+// Awards specific styles
+//
+
+.award-title {
+    color: var(--global-header-color);
+    font-weight: 550;
 }

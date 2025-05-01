@@ -1,7 +1,4 @@
-<header class="post-header">
-    <h1 class="post-title special-col" style="font-size: 1.8rem;">Teaching</h1>
-</header>
-<br>
+<p class="post-title section-title">Teaching</p>
 
 {%- assign grouped_teaching = site.teaching | group_by: "title" -%}
 
@@ -22,8 +19,8 @@
             {% for group in sorted_teaching %}
                 {%- assign sorted_items = group.items | sort: "date" | reverse -%}
                 <li style="display: flex; justify-content: space-between; align-items: center;">
-                    <span class="special-font" style="font-size: 1.1rem; flex: 1;">{{ group.name }}</span>
-                    <span>
+                    <span class="award-title">{{ group.name }}</span>
+                    <span class="paper-links">
                         {% for teach in sorted_items %}
                             {% if teach.link %}
                                 <a href="{{ teach.link }}" target="_blank">{{ teach.semester }}</a>

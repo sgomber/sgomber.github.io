@@ -3,25 +3,25 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$white-color};
-  --global-nav-bg-color: #{$deep-navy-blue-color};
-  --global-active-nav-color: #{$yellow-color};
+  --global-bg-color: #{$dark-white-color-1};
+  --global-nav-bg-color: #{$dark-white-color};
+  --global-active-nav-color: #{$uiuc-orange};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
-  --global-nav-text-color: #{$white-color};
+  --global-nav-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-hcolor: #{$red-color-dark};
   --global-theme-color: #{$black-color};
-  --global-header-color: #1e3a5f;
+  --global-header-color: #{$uiuc-blue};
   --global-sf-color: #{$blue-color-dark};
-  --global-hover-color: #{$yellow-color};
+  --global-hover-color: #{$uiuc-orange};
   --global-link-color: #{$link-color};
   --global-social-color: #{$grey-900};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: #{$black-color};
   --global-card-bg-color: #{$white-color};
   --global-auth-color: #{$orange-color};
 

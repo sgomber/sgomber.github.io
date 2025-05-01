@@ -5,84 +5,71 @@
     {% assign bibtex_id = "bibtex-" | append: forloop.index0 | append: "-" | append: publication.title | slugify %}
     
     <li class="list-group-item">
-        <h5 class="title special-font">
+        <span class="title paper-title">
             {{ publication.title }}
-        </h5>
-        <h6 style="font-size: 1rem;">
+        </span><br>
+        <span class="authors">
             {{ publication.authors }}
-        </h6>
+        </span><br>
         {% if publication.venue %}
-            <h6 style="font-weight: 600; font-size: 1rem;">
+            <span class="venue">
                 {{ publication.venue | join: " • " }}
-            </h6>
+            </span><br>
         {% endif %}
         {% if publication.award %}
-            <span style="display: flex; align-items: center; gap: 5px; font-size: 0.9rem; color: #6c757d;">
-                <span style="font-size: 1.3rem; color: #f8d775;">🏆</span>
-                <span style="font-size: 1.05rem; font-weight: 600; color: #292c30">{{ publication.award }}</span>
-            </span>
+            <span>
+                <span style="font-size: 1rem; font-weight: 550; color: #df5504">{{ publication.award }}</span>
+                <span style="font-size: 1rem; color: #f8d775;">🏆</span>
+            </span><br>
         {% endif %}
 
         <!-- Button Section -->
-        <div style="margin-top: 15px;">
-            <div class="card-links" style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <style>
-                    .elegant-btn {
-                        padding: 4px 10px;
-                        border: 1px solid #007bff;
-                        border-radius: 4px;
-                        border-radius: 6px; /* Rounder edges */
-                        color: #007bff;
-                        text-decoration: none;
-                        font-size: 0.9rem;
-                        font-weight: 500;
-                        transition: background-color 0.2s ease, color 0.2s ease;
-                    }
-                    .elegant-btn:hover {
-                        background-color: #007bff;
-                        color: white;
-                    }
-                </style>
-
+        <div>
+            <div class="paper-links">
+                {% assign links = "" %}
+              
                 {% if publication.abstract %}
-                <a href="#" class="elegant-btn" data-bs-toggle="collapse" data-bs-target="#{{ abstract_id }}" aria-expanded="false" aria-controls="{{ abstract_id }}">
-                    Abstract
-                </a>
+                  {% assign links = links | append: '<a href="#" data-bs-toggle="collapse" data-bs-target="#' | append: abstract_id | append: '" aria-expanded="false" aria-controls="' | append: abstract_id | append: '">Abstract</a>' %}
                 {% endif %}
-
+              
                 {% for link in publication.links %}
-                    {% assign link_url = link.url %}
-                    {% if link_url contains "https" %}
-                        {% assign final_url = link_url %}
-                    {% else %}
-                        {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
-                    {% endif %}
-                    <a href="{{ final_url }}" class="elegant-btn" target="_blank">
-                        {{ link.name }}
-                    </a>
+                  {% assign link_url = link.url %}
+                  {% if link_url contains "https" %}
+                    {% assign final_url = link_url %}
+                  {% else %}
+                    {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
+                  {% endif %}
+                  {% assign link_html = '<a href="' | append: final_url | append: '" target="_blank">' | append: link.name | append: '</a>' %}
+                  {% if links != "" %}
+                    {% assign links = links | append: ' | ' %}
+                  {% endif %}
+                  {% assign links = links | append: link_html %}
                 {% endfor %}
-
+              
                 {% if publication.bibtex %}
-                <a href="#" class="elegant-btn" data-bs-toggle="collapse" data-bs-target="#{{ bibtex_id }}" aria-expanded="false" aria-controls="{{ bibtex_id }}">
-                    BibTeX
-                </a>
+                  {% if links != "" %}
+                    {% assign links = links | append: ' | ' %}
+                  {% endif %}
+                  {% assign links = links | append: '<a class="paper-links" href="#" data-bs-toggle="collapse" data-bs-target="#' | append: bibtex_id | append: '" aria-expanded="false" aria-controls="' | append: bibtex_id | append: '">BibTeX</a>' %}
                 {% endif %}
+              
+                {{ links | raw }}
             </div>
-
+          
+            <!-- Collapsible Abstract -->
             {% if publication.abstract %}
             <div class="collapse mt-2" id="{{ abstract_id }}">
-                <p class="abstract-text" style="font-size: 0.95rem; margin-top: 5px; line-height: 1.5; text-align: justify; border-left: 4px solid #3498db; padding-left: 10px;">
-                    {{ publication.abstract }}
-                </p>
+              <p class="abstract-text"> {{ publication.abstract }} </p>
             </div>
             {% endif %}
-
+          
+            <!-- Collapsible BibTeX -->
             {% if publication.bibtex %}
-            <div class="collapse mt-2" id="{{ bibtex_id }}" style="font-size: 0.95rem; margin-top: 5px; line-height: 1.5; text-align: justify; border-left: 4px solid #3498db; padding-left: 10px;">
-                {{ publication.bibtex | newline_to_br }}
+            <div class="collapse mt-2" id="{{ bibtex_id }}">
+              <p class="bibtex-text"> {{ publication.bibtex | newline_to_br }} </p>
             </div>
             {% endif %}
-        </div>
+          </div>
     </li>
     {% endfor %}
 </ul>

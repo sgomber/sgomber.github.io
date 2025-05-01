@@ -3,7 +3,7 @@ layout: publications
 type: workshop
 
 title: "Neural Abstract Interpretation"
-authors: "Shaurya Gomber, Gagandeep Singh"
+authors: "<span class=author-font>Shaurya Gomber</span>, Gagandeep Singh"
 date: 2024-06-26
 venue: ["VerifAI @ ICLR 2025", "SRC @ PLDI 2024"]
 

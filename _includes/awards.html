@@ -1,7 +1,4 @@
-<header class="post-header">
-    <h1 class="post-title special-col" style="font-size: 1.8rem;">Awards & Fellowships</h1>
-</header>
-<br>
+<p class="post-title section-title">Awards & Fellowships</p>
 
 {%- assign awards = site.awards | reverse -%}
 
@@ -10,11 +7,14 @@
         <ul class="list-unstyled mb-0">
             {% for award in awards %}
             <li style="display: flex; align-items: center; justify-content: space-between;">
-                <span class="special-font" style="font-size: 1.2rem; flex: 1;">{{ award.title }}
+                <span class="award-title">{{ award.title }}
                 {% if award.link %}
-                <a href="{{ award.link }}" target="_blank" style="text-decoration: none; font-size: 1.2rem;">
-                    <i class="fas fa-external-link-alt fa-xs"></i>
-                </a>                
+                <span class="paper-links">
+                <a href="{{ award.link }}" target="_blank">
+                    (More)
+                </a>      
+                </span>
+
                 {% endif %}
             </span> 
                 <span style="display: flex; align-items: center; gap: 12px; white-space: nowrap;">

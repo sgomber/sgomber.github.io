@@ -1,8 +1,8 @@
           
           <div class="news">
-            <h3 class="special-col">News</h3>
+            <p class="section-title-mid">News</p>
             {% if site.news != blank -%} 
-            <div class="table-responsive" style="overflow-y: scroll; max-height: 150px; border: 1px solid #dee2e6; border-radius: 5px; padding: 5px;">
+            <div class="table-responsive" style="overflow-y: scroll; max-height: 180px; border: 1.5px solid #0e0c0c; border-radius: 5px; padding: 5px;">
               <table class="table table-sm table-borderless" style="width:max-content;line-height:5px;font-size:11px">
               {%- assign news = site.news | reverse -%} 
               {% for item in news %} 

@@ -5,10 +5,10 @@ layout: default
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title special-col">
-           {% if site.title == "blank" -%}<b><span class="special special-col">{{ site.first_name }}</span></b> {{ site.middle_name }} {%- else -%}{{ site.title }}{%- endif %}
+          <h2 class="post-title">
+           {% if site.title == "blank" -%}<b><span class="special">{{ site.first_name }}</span></b> {{ site.middle_name }} {%- else -%}{{ site.title }}{%- endif %}
            {{ site.last_name }}
-          </h1>
+          </h2>
           
           <p class="desc">{{ page.subtitle }}</p>
         </header>
@@ -56,8 +56,6 @@ layout: default
 
           
           
-          <!-- <h1 class="post-title special-col">{% if page.resume_pdf %} My <a href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right">CV</a>{% endif %}</h1> -->
-
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}
