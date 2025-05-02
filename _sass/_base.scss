@@ -681,8 +681,8 @@ html.transition *:after {
 .paper-title {
     color: var(--global-header-color);
     font-family: 'Source Sans Pro';
-    font-weight: 590;
-    font-size: 1.3rem;
+    font-weight: 550;
+    font-size: 1.2rem;
     line-height: 1;
 }
 
@@ -700,7 +700,7 @@ html.transition *:after {
 }
 
 .paper-links {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding-top: 2px;
 }
 
@@ -724,5 +724,6 @@ html.transition *:after {
 
 .award-title {
     color: var(--global-header-color);
-    font-weight: 550;
+    font-size: 1.02rem;
+    font-weight: 500;
 }
