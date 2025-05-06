@@ -8,9 +8,9 @@
         <ul class="list-unstyled mb-0">
             {% for group in grouped_services %}
             <li>
-                <strong class="award-title">{{ group.name }}:</strong>
+                <span class="award-title">{{ group.name }}:</span>
                 {% assign sorted_items = group.items | sort: "date" | reverse %}
-                <span class="paper-links">
+                <span class="award-links">
                     {% for item in sorted_items %}
                     {% if item.link %}
                         <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>

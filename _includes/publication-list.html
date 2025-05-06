@@ -13,13 +13,13 @@
         </span><br>
         {% if publication.venue %}
             <span class="venue">
-                {{ publication.venue | join: " • " }}
+                {{ publication.venue | join: " | " }}
             </span><br>
         {% endif %}
         {% if publication.award %}
             <span>
-                <span style="font-size: 1rem; font-weight: 550; color: red">{{ publication.award }}</span>
-                <span style="font-size: 1rem; color: #f8d775;">🏆</span>
+                <span style="font-size: 0.8rem; color: #f8d775;">🏆</span>
+                <span class="award-badge">{{ publication.award }}</span>
             </span><br>
         {% endif %}
 

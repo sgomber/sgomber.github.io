@@ -20,7 +20,7 @@
                 {%- assign sorted_items = group.items | sort: "date" | reverse -%}
                 <li style="display: flex; justify-content: space-between; align-items: center;">
                     <span class="award-title">{{ group.name }}</span>
-                    <span class="paper-links">
+                    <span class="award-links">
                         {% for teach in sorted_items %}
                             {% if teach.link %}
                                 <a href="{{ teach.link }}" target="_blank">{{ teach.semester }}</a>
