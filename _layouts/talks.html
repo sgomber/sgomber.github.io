@@ -26,8 +26,8 @@ layout: default
                     {{ talk.date | date: "%b %-d, %Y" }}
                 </span><br>
                 {% if talk.slides %}
-                <span class="paper-links">
-                    <a href="{{ talk.slides | prepend: 'assets/pdf/talks/' | relative_url}}">Slides</a>
+                <span>
+                    <a class="paper-links" href="{{ talk.slides | prepend: 'assets/pdf/talks/' | relative_url}}">Slides</a>
                 </span>
                 {% endif %}
             </div>

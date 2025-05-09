@@ -9,8 +9,8 @@
             <li style="display: flex; align-items: center; justify-content: space-between;">
                 <span class="award-title">{{ award.title }}
                 {% if award.link %}
-                <span class="paper-links">
-                <a href="{{ award.link }}" target="_blank">
+                <span>
+                <a class="paper-links" href="{{ award.link }}" target="_blank">
                     (More)
                 </a>      
                 </span>
@@ -18,7 +18,7 @@
                 {% endif %}
             </span> 
                 <span style="display: flex; align-items: center; gap: 12px; white-space: nowrap;">
-                    <span style="font-size: 0.9rem;">{{ award.year }}</span>
+                    <span style="font-size: 0.91rem;">{{ award.year }}</span>
                 </span>
             </li>
             {% endfor %}

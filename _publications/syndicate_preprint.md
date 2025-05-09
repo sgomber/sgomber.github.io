@@ -15,7 +15,8 @@ links:
     url: "https://arxiv.org/abs/2404.05951"
 
 bibtex: >
-    @misc{syndicate_arxiv,
+    @misc{
+        syndicate_arxiv,
         title={Efficient Ranking Function-Based Termination Analysis with Bi-Directional Feedback}, 
         author={Yasmin Sarita and Avaljot Singh and Shaurya Gomber and Gagandeep Singh and Mahesh Vishwanathan},
         year={2024},

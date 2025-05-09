@@ -7,6 +7,7 @@
 body {
 //   font-family: 'Georgia', monospace;
   font-family: 'Tahoma';
+  font-size: 1.05rem;
 }
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
@@ -681,53 +682,85 @@ html.transition *:after {
 .paper-title {
     color: var(--global-header-color);
     font-weight: 500;
-    font-size: 1.15rem;
-    line-height: 1;
+    font-size: 1.2rem;
 }
 
 .author-font {
     font-weight: bold;
-    // font-size: 0.9rem;
 }
 
 .authors {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.83rem;
+    font-size: 0.9rem;
 }
 
 .venue {
     background-color: #fff5cc;
-    // color: #0055aa;
+    display: inline-block;
     border-radius: 4px;
-    font-size: 0.92rem;
+    font-size: 0.97rem;
+    margin-top: 5px;
+}
+
+.venue a {
+    color: inherit;
+}
+
+.award {
+    margin-top: -1px;
 }
 
 .award-badge {
     color: red;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
     vertical-align: middle;
 }
 
-.paper-links {
-    font-size: 0.87rem;
-    padding-top: 2px;
-    margin-top: 2px;
+.award-badge:hover {
+    color: red;
 }
 
-.paper-links a {
+.paper-links {
+    font-size: 0.9rem;
+    margin-top: 5px;
     color: inherit;
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-thickness: 0.5px;
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 2px;
     color: #383838;
-    opacity: 0.9;
+    opacity: 0.94;
 }
 
 .paper-links a:hover {
     color: var(--global-hover-color);
     text-decoration: underline;
 }
+
+.abstract-block {
+    background-color: $white-color;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+.abstract-block p {
+    margin: 0;
+    font-size: 0.93rem;
+}
+
+.bibtex-block pre {
+    background-color: $white-color;
+    color: #333;                   /* readable text color */
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    position: relative;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
 
 //
 // Awards specific styles
@@ -736,19 +769,17 @@ html.transition *:after {
 .award-title {
     color: var(--global-header-color);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .award-links {
-    font-size: 0.95rem;
+    font-size: 0.96rem;
     padding-top: 2px;
 }
 
 .award-links a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.5px;
     text-underline-offset: 2px;
 }
 
