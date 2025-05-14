@@ -3,7 +3,7 @@ layout: publications
 type: thesis
 
 title: "Neural Abstract Interpretation: Leveraging neural networks for automated, efficient and differentiable abstract interpretation"
-authors: <span class=author-font>Shaurya Gomber</span>
+authors: 
 date: 2024-05-01
 
 venue:

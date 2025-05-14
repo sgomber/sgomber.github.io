@@ -65,14 +65,14 @@
                   {% endif %}
                   {% assign link_html = '<a class="paper-links" href="' | append: final_url | append: '" target="_blank">' | append: link.name | append: '</a>' %}
                   {% if links != "" %}
-                    {% assign links = links | append: ' | ' %}
+                    {% assign links = links | append: ' . ' %}
                   {% endif %}
                   {% assign links = links | append: link_html %}
                 {% endfor %}
               
                 {% if publication.bibtex %}
                   {% if links != "" %}
-                    {% assign links = links | append: ' | ' %}
+                    {% assign links = links | append: ' . ' %}
                   {% endif %}
                   {% assign links = links | append: '<a class="paper-links" href="#" data-bs-toggle="collapse" data-bs-target="#' | append: bibtex_id | append: '" aria-expanded="false" aria-controls="' | append: bibtex_id | append: '">BibTeX</a>' %}
                 {% endif %}
