@@ -15,7 +15,7 @@ award:
   url: "https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/david-j-kuck-outstanding-thesis-awards"
 
 links:
-  - name: "Thesis Link"
+  - name: "Thesis"
     url: "https://www.ideals.illinois.edu/items/131524"
 
 bibtex: |

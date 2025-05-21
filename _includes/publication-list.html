@@ -31,20 +31,20 @@
         {% endif %}
 
         {% if publication.award %}
-        <div class="award">
+        <span class="paper-award">
             <span style="font-size: 0.95rem; color: #f8d775;">🏆</span>
             {% if publication.award.name %}
               {% if publication.award.url %}
-                <a href="{{ publication.award.url }}" target="_blank" rel="noopener noreferrer" class="award-badge">
+                <a href="{{ publication.award.url }}" target="_blank" rel="noopener noreferrer" class="paper-award-badge">
                   {{ publication.award.name }}
                 </a>
               {% else %}
-                <span class="award-badge">{{ publication.award.name }}</span>
+                <span class="paper-award-badge">{{ publication.award.name }}</span>
               {% endif %}
             {% else %}
-              <span class="award-badge">{{ publication.award.name }}</span>
+              <span class="paper-award-badge">{{ publication.award.name }}</span>
             {% endif %}
-            </div>      
+        </span>      
         {% endif %}
 
         <!-- Button Section -->
@@ -65,14 +65,14 @@
                   {% endif %}
                   {% assign link_html = '<a class="paper-links" href="' | append: final_url | append: '" target="_blank">' | append: link.name | append: '</a>' %}
                   {% if links != "" %}
-                    {% assign links = links | append: ' . ' %}
+                    {% assign links = links | append: '&nbsp;&nbsp;' %}
                   {% endif %}
                   {% assign links = links | append: link_html %}
                 {% endfor %}
               
                 {% if publication.bibtex %}
                   {% if links != "" %}
-                    {% assign links = links | append: ' . ' %}
+                    {% assign links = links | append: '&nbsp;&nbsp;' %}
                   {% endif %}
                   {% assign links = links | append: '<a class="paper-links" href="#" data-bs-toggle="collapse" data-bs-target="#' | append: bibtex_id | append: '" aria-expanded="false" aria-controls="' | append: bibtex_id | append: '">BibTeX</a>' %}
                 {% endif %}

@@ -3,18 +3,18 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$dark-white-color-1};
+  --global-bg-color: #{$white-color};
   --global-nav-bg-color: #{$dark-white-color};
-  --global-active-nav-color: #{$uiuc-orange};
+  --global-active-nav-color: #{$blue-color-dark};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-nav-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-hcolor: #{$red-color-dark};
   --global-theme-color: #{$black-color};
-  --global-header-color: #{$uiuc-blue};
+  --global-header-color: #{$blue-color-dark};
   --global-sf-color: #{$blue-color-dark};
-  --global-hover-color: #{$uiuc-orange};
+  --global-hover-color: #{$red-color};
   --global-link-color: #{$link-color};
   --global-social-color: #{$grey-900};
   --global-footer-bg-color: #{$grey-color-dark};
