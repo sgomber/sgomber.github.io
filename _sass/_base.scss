@@ -661,13 +661,15 @@ html.transition *:after {
 .section-title {
     color: var(--global-header-color);
     font-size: 1.2rem;
+    font-weight: 530;
     margin-top: 1rem;
     border-bottom: 2px solid #e0e0e0;
 }
 
 .section-title-mid {
     color: var(--global-header-color);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 530;
     margin-top: 1rem;
     text-align: center;
 }
