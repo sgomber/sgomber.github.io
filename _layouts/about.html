@@ -30,8 +30,14 @@ layout: default
               class=profile_image_class
               alt=page.profile.image -%}
             {% endif -%}
+            <p align="center">
+              Room 2107 <br>
+              Siebel Center for Computer Science<br>
+              201 N. Goodwin Avenue<br>
+              Urbana, IL 61801<br>
+            </p>
             {%- unless page.social %}
-            {%- include social_lite.html %}
+            {%- include social.html %}
           {%- endunless %}
           </div>
           {%- endif %}

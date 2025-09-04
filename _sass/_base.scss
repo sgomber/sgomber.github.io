@@ -673,6 +673,27 @@ html.transition *:after {
 }
 
 //
+// Social icons style
+//
+.social-icons {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  flex-wrap: wrap;          /* wrap if too many */
+  gap: 15px;                /* spacing between icons */
+  margin: 20px 0;           /* optional spacing */
+}
+
+.social-icons a {
+  font-size: 27px;          /* bigger icons */
+  color: var(--global-link-color);              /* default color */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--global-hover-color);           /* hover color */
+}
+
+//
 // Publication specific styles
 //
 
