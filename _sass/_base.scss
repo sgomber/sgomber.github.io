@@ -700,23 +700,32 @@ html.transition *:after {
 //
 
 .paper-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 510;
-    font-size: 1.15rem;
-}
-
-.author-font::after {
-    content: "*";
-    color: black;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 510; 
+  font-size: 1.18rem;
+  margin-bottom: 0.17rem;
+  line-height: 1.3;
+  color: #000;
 }
 
 .authors {
-    font-size: 0.82rem;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #616060;
+  letter-spacing: 0.2px;
+}
+
+.author-font {
+    font-weight: 400;
+    font-size: 0.83rem;
+    color: rgb(0, 0, 0);
 }
 
 .venue {
     display: inline-block;
-    background-color: #e9e8e8;
+    background-color: #fff7e6;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -743,7 +752,7 @@ html.transition *:after {
 }
 
 .paper-links {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     margin-top: 5px;
 }
 
