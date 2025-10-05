@@ -1,25 +1,47 @@
-          
-          <div class="news">
-            <p class="section-title-mid">News</p>
-            {% if site.news != blank -%} 
-            <div class="table-responsive" style="overflow-y: scroll; max-height: 180px; border: 1.5px solid #0e0c0c; border-radius: 5px; padding: 5px;">
-              <table class="table table-sm table-borderless" style="width:max-content;line-height:5px;font-size:11px">
-              {%- assign news = site.news | reverse -%} 
-              {% for item in news %} 
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
+<div class="news">
+  <p class="section-title-mid">News</p>
+  {% if site.news != blank -%} 
+  <div class="table-responsive"
+       style="overflow-y: auto;
+              overflow-x: hidden;
+              max-height: 180px;
+              border: 1.5px solid #0e0c0c;
+              border-radius: 5px;
+              padding: 5px;">
+              
+    <table class="table table-sm table-borderless"
+           style="width: 100%;
+                  font-size: 11px;
+                  line-height: 1.25rem;      /* tighter line height */
+                  table-layout: fixed;">
+                  
+      {%- assign news = site.news | reverse -%} 
+      {% for item in news %} 
+      <tr style="margin: 0; padding: 0;">
+        <th scope="row"
+            style="width: 7rem;
+                   white-space: nowrap;
+                   padding: 2px 6px;         /* reduced padding */
+                   font-weight: 500;">
+          {{ item.date | date: "%b %-d, %Y" }}
+        </th>
+        <td style="white-space: normal;
+                   word-wrap: break-word;
+                   padding: 2px 0;">         <!-- tighter padding -->
+          {% if item.inline -%} 
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
           {%- else -%} 
-            <p>No news so far...</p>
+            <a class="news-title" href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
           {%- endif %} 
-          </div>
+        </td>
+      </tr>
+      {%- endfor %} 
+    </table>
+    
+  </div>
+  {%- else -%} 
+  <p>No news so far...</p>
+  {%- endif %} 
+</div>
