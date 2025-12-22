@@ -1,14 +1,17 @@
 ---
 layout: publications
-type: preprint
+type: conference
 
-title: "Efficient Ranking Function-Based Termination Analysis with Bi-Directional Feedback"
+title: "Efficient Ranking Function-Based Termination Analysis via Bidirectional Decompositional Search"
 authors: "Yasmin Chandini Sarita, Avaljot Singh, <span class=author-font>Shaurya Gomber</span>, Gagandeep Singh, Mahesh Viswanathan"
 date: 2023-11-19
-venue: 
+venue:
+  - name: "ESOP 2026"
+    url: "https://etaps.org/2026/conferences/esop/"
 
 abstract: >
-    Several techniques have been developed to prove the termination of programs. Finding ranking functions is one of the common approaches to do so. A ranking function must be bounded and must reduce at every iteration for all the reachable program states. Since the set of reachable states is often unknown, invariants serve as an over-approximation. Further, in the case of nested loops, the initial set of program states for the nested loop can be determined by the invariant of the outer loop. So, invariants play an important role in proving the validity of a ranking function in the absence of the exact reachable states. However, in the existing techniques, either the invariants are synthesized independently, or combined with ranking function synthesis into a single query, both of which are inefficient. We observe that a guided search for invariants and ranking functions can have benefits in terms of the number of programs that can be proved to terminate and the time needed to identify a proof of termination. So, in this work, we develop Syndicate, a novel framework that synergistically guides the search for both the ranking function and an invariant that together constitute a proof of termination. Owing to our synergistic approach, Syndicate can not only prove the termination of more benchmarks but also achieves a reduction ranging from 17% to 70% in the average runtime as compared to existing state-of-the-art termination analysis tools. We also prove that Syndicate is relatively complete, i.e., if there exists a ranking function and an invariant in their respective templates that can be used to prove the termination of a program, then Syndicate will always find it if there exist complete procedures for the template-specific functions in our framework.
+    Synthesizing ranking functions is a common technique for proving the termination of loops in programs. 
+    A ranking function must be bounded and decrease by a specified amount with each iteration for all reachable program states. Since the set of reachable states is unknown, loop invariants are used to overapproximate it, requiring the joint synthesis of ranking functions and invariants to prove the ranking functions valid. Existing approaches either synthesize them independently, encode them into a single monolithic query, or connect them through ad hoc, one-way information flow, leading to inefficient exploration of large search spaces. We present Syndicate, a termination analysis framework based on the novel concept of Bidirectional Decompositional Search (BDS). BDS keeps ranking-function and invariant synthesis decomposed but ensures that they co-evolve through continuous bi-directional feedback. This mutual guidance enables efficient exploration and significantly increases the number of programs proven to terminate while reducing runtime compared to baselines without such feedback. Depending on the templates used, Syndicate is both relatively complete and efficient, outperforming existing techniques that achieve at most one of these guarantees. Despite its simplicity, Syndicate matches or surpasses state-of-the-art tools in termination proofs and runtime, demonstrating the effectiveness of bi-directional reasoning in termination analysis.
 
 links:
   - name: "Arxiv"
