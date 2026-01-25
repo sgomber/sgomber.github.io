@@ -16,6 +16,9 @@ abstract: >
 links:
   - name: "Arxiv"
     url: "https://arxiv.org/abs/2404.05951"
+  
+  - name : "Code"
+    url : "https://github.com/uiuc-focal-lab/Syndicate"
 
 bibtex: >
     @misc{
