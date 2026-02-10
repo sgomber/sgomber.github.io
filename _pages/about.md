@@ -3,10 +3,6 @@ layout: about
 title: About
 permalink: /
 subtitle: CS PhD student @ <a href="https://cs.illinois.edu/">UIUC</a>
-resume_pdf: Shaurya_Gomber_CV.pdf
-doc_links:
-  - name: "CV"
-    url: Shaurya_Gomber_CV.pdf
 
 profile:
   align: right

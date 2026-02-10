@@ -23,6 +23,12 @@
     {%- if site.twitter_username -%}
     <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-twitter"></i></a>
     {% endif %}
+    {%- if site.cv -%}
+    <a href="{{ site.baseurl | prepend: site.url }}/assets/pdf/{{ site.cv }}"
+    title="Curriculum Vitae">
+    <i class="ai ai-cv" style="font-size: 130%;"></i>
+    </a>
+    {% endif %}
     {%- if site.fb_username -%}
     <a href="https://www.facebook.com/{{ site.fb_username }}/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
     {% endif %}
