@@ -1,6 +1,6 @@
 <div class="news">
   <p class="section-title-mid">News</p>
-  {% if site.news != blank -%} 
+  {% if site.data.news != blank -%} 
   <div class="table-responsive"
        style="overflow-y: auto;
               overflow-x: hidden;
@@ -15,7 +15,7 @@
                   line-height: 1.25rem;      /* tighter line height */
                   table-layout: fixed;">
                   
-      {%- assign news = site.news | reverse -%} 
+      {%- assign news = site.data.news -%} 
       {% for item in news %} 
       <tr style="margin: 0; padding: 0;">
         <th scope="row"
@@ -29,7 +29,7 @@
                    word-wrap: break-word;
                    padding: 2px 0;">         <!-- tighter padding -->
           {% if item.inline -%} 
-            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
           {%- else -%} 
             <a class="news-title" href="{{ item.url | relative_url }}">
               {{ item.title }}
