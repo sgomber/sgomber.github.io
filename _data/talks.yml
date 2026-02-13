@@ -1,0 +1,39 @@
+- date: 2025-10-01
+  title: "LINC: A Neuro-symbolic Approach for Logical Reasoning"
+  loc: PL/FM/SE PhD Qualification Exam, UIUC
+  slides: Quals_LINC.pdf
+
+- date: 2025-05-01
+  title: Multi-Network Relational Verification and Certifiable Training
+  loc: CS584 Embedded System Verification, Spring 2025, UIUC
+  slides: Multi_Net_Verification.pdf
+
+- date: 2024-04-19
+  title: Neural Abstract Interpretation
+  loc: Formal Methods Seminar, Spring 2024, UIUC
+  slides: NAI_FM.pdf
+
+- date: 2023-11-27
+  title: Verification and Certified Training of PINNs
+  loc: CS598 Scientific Machine Learning, Fall 2023, UIUC
+  slides: PINN_Verification.pdf
+
+- date: 2023-11-08
+  title: Satisfiability and Synthesis Modulo Oracles
+  loc: Formal Methods Seminar, Fall 2023, UIUC
+  slides: SMTO.pdf
+
+- date: 2023-05-08
+  title: Neural Approximations of Abstract Transformers
+  loc: CS477 Formal Software Development Methods, Spring 2023, UIUC
+  slides: Neural_Abstract_Transformers.pdf
+
+- date: 2023-03-31
+  title: Synthesizing Abstract Transformers
+  loc: Formal Methods Seminar, Spring 2023, UIUC
+  slides: Synthesizing_Abstract_Transformers.pdf
+
+- date: 2022-11-27
+  title: Monotonic Neural Networks
+  loc: CS521 Trustworthy AI Systems, Fall 2022, UIUC
+  slides: Monotonic_Neural_Networks.pdf

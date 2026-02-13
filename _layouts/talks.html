@@ -9,7 +9,7 @@ layout: default
     </p>
 
     <ul class="list-group">
-        {%- assign talks = site.talks | reverse -%} 
+        {%- assign talks = site.data.talks -%} 
         {% for talk in talks %} 
         <li class="list-group-item d-flex justify-content-between align-items-center">
             <div>

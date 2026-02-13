@@ -115,8 +115,6 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
-  talks:
-    output: false
   publications:
     output: false
   teaching:
