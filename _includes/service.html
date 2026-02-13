@@ -1,7 +1,7 @@
 <p class="post-title section-title">Academic Service</p>
 
 
-{%- assign grouped_services = site.services | group_by: "type" | sort: "name" -%}
+{%- assign grouped_services = site.data.services | group_by: "type" | sort: "name" -%}
 
 <ul class="list-group">
     <li class="list-group-item">

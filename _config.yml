@@ -119,8 +119,6 @@ collections:
     output: false
   publications:
     output: false
-  services:
-    output: false
   teaching:
     output: false
 news_limit: 6
