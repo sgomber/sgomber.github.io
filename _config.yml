@@ -119,8 +119,6 @@ collections:
     output: false
   publications:
     output: false
-  awards:
-    output: false
   services:
     output: false
   teaching:
