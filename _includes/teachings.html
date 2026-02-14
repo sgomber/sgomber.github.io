@@ -1,22 +1,11 @@
 <p class="post-title section-title">Teaching</p>
 
-{%- assign grouped_teaching = site.teaching | group_by: "title" -%}
-
-<!-- Step 1: Extract the latest date for each title -->
-{%- assign enriched_teaching = "" | split: "" -%}
-{% for group in grouped_teaching %}
-    {%- assign sorted_items = group.items | sort: "date" | reverse -%}
-    {%- assign latest_date = sorted_items.first.date -%}
-    {%- assign enriched_teaching = enriched_teaching | push: group | merge: latest_date -%}
-{% endfor %}
-
-<!-- Step 2: Sort teaching groups by latest date -->
-{%- assign sorted_teaching = enriched_teaching | sort: "latest_date" | reverse -%}
+{%- assign grouped_teaching = site.data.teaching | group_by: "title" -%}
 
 <ul class="list-group">
     <li class="list-group-item">
         <ul class="list-unstyled mb-0">
-            {% for group in sorted_teaching %}
+            {% for group in grouped_teaching %}
                 {%- assign sorted_items = group.items | sort: "date" | reverse -%}
                 <li style="display: flex; justify-content: space-between; align-items: center;">
                     <span class="award-title">{{ group.name }}</span>
