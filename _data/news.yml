@@ -1,3 +1,7 @@
+- date: 2026-02-12
+  inline: true
+  content: "<span class='badge-new'>New!</span> Check out our new [short paper](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf) on a unified formalism for LLM-based theorem provers."
+
 - date: 2026-01-12
   inline: true
   content: "Will be the Teaching Assistant for [CS477: Formal Software Development Methods](https://courses.grainger.illinois.edu/cs477/sp2026/) this semester."
