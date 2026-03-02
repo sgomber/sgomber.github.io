@@ -1,6 +1,6 @@
-- date: 2026-02-12
+- date: 2026-03-01
   inline: true
-  content: "<span class='badge-new'>New!</span> Check out our new [short paper](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf) on a unified formalism for LLM-based theorem provers."
+  content: "<span class='badge-new'>New!</span> Our [short paper](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf) on a unified formalism for LLM-based theorem provers accepted at the <br> [VerifAI workshop, ICLR'26](https://verifai-workshop.github.io/)!"
 
 - date: 2026-01-12
   inline: true

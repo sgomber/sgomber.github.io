@@ -21,13 +21,13 @@
         <th scope="row"
             style="width: 7rem;
                    white-space: nowrap;
-                   padding: 2px 6px;         /* reduced padding */
+                   padding: 4px 6px;         /* reduced padding */
                    font-weight: 500;">
           {{ item.date | date: "%b %-d, %Y" }}
         </th>
         <td style="white-space: normal;
                    word-wrap: break-word;
-                   padding: 2px 0;">         <!-- tighter padding -->
+                   padding: 4px 0;">         <!-- tighter padding -->
           {% if item.inline -%} 
             {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
           {%- else -%} 

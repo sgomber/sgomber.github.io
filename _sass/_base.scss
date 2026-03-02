@@ -335,7 +335,7 @@ footer.sticky-bottom {
 .list-group-item {
     background-color: transparent; /* no background */
     border: none;                  /* no full border */
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 
     .badge {
       color: var(--global-text-color) !important;
@@ -667,7 +667,6 @@ html.transition *:after {
 
 .badge-new {
   color: #d32f2f;
-  font-size: 0.88em;
   font-weight: 500;
 }
 
