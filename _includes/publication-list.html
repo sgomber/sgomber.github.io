@@ -25,12 +25,16 @@
               {% else %}
                 {{ v }}
               {% endif %}
+              {% if v.extra %}
+                <span style="font-size: 0.75rem; color: rgb(137, 137, 137);">{{ v.extra }}</span>
+              {% endif %}
               {% unless forloop.last %} | {% endunless %}
             {% endfor %}
         </div>
         {% endif %}
 
         {% if publication.award %}
+        <span></span>
         <span class="paper-award">
             <span style="font-size: 0.95rem; color: #f8d775;">🏆</span>
             {% if publication.award.name %}

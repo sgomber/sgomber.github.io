@@ -745,6 +745,14 @@ html.transition *:after {
   font-size: 0.87em;
 }
 
+.venue a {
+  color: #6e1c0d;
+}
+
+.venue a:hover {
+  color: var(--global-hover-color);
+}
+
 .talk_venue {
   font-size: 0.84rem;
   color: #6B7280;
