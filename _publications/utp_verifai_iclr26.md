@@ -15,7 +15,7 @@ abstract: >
 
 links:
   - name: "Paper"
-    url: "Unified_Theorem_Proving.pdf"
+    url: "Theorem_Proving_VerifAI_2026.pdf"
 
 bibtex: 
 ---
