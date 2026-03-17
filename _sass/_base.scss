@@ -743,10 +743,11 @@ html.transition *:after {
   // padding: 2px 6px;
   // border-radius: 4px;
   font-size: 0.87em;
+  color: var(--global-venue-color);
 }
 
 .venue a {
-  color: #6e1c0d;
+  color: var(--global-venue-color);
 }
 
 .venue a:hover {
