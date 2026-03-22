@@ -8,7 +8,6 @@ date: 2026-03-01
 venue:
   - name: "VerifAI @ ICLR 2026"
     url: "https://verifai-workshop.github.io/"
-    extra: "(to appear)"
 
 abstract: >
     LLM-based theorem provers differ widely in how they organise interaction between language models and interactive theorem provers, ranging from whole-proof generation to tactic-level and multi-stage pipelines. We propose a unified operational framework that makes this interaction structure explicit by modelling proof search as transitions over a joint formal and informal state and by introducing orchestration as a first-class abstraction that controls how tools such as language models, retrieval components, and provers are scheduled and coordinated. Within this framework, existing systems such as Baldur, COPRA, DSP, POETRY, etc, can be expressed uniformly as different orchestration strategies, enabling principled comparison of interaction patterns, rapid prototyping of new strategies, and backend-agnostic evaluation and reuse across provers, libraries, and models.

@@ -8,7 +8,6 @@ date: 2023-11-19
 venue:
   - name: "ESOP 2026"
     url: "https://etaps.org/2026/conferences/esop/"
-    extra: "(to appear)"
 
 abstract: >
     Synthesizing ranking functions is a common technique for proving the termination of loops in programs. 
