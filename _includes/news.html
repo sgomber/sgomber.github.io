@@ -4,15 +4,11 @@
   <div class="table-responsive"
        style="overflow-y: auto;
               overflow-x: hidden;
-              max-height: 200px;
-              border: 1.5px solid #0e0c0c;
-              border-radius: 5px;
-              padding: 5px;">
+              max-height: 200px;">
               
     <table class="table table-sm table-borderless"
            style="width: 100%;
-                  font-size: 11px;
-                  line-height: 1.25rem;      /* tighter line height */
+                  line-height: 1.25rem;
                   table-layout: fixed;">
                   
       {%- assign news = site.data.news -%} 
@@ -21,13 +17,14 @@
         <th scope="row"
             style="width: 7rem;
                    white-space: nowrap;
-                   padding: 4px 6px;         /* reduced padding */
+                   text-align: right;
+                   padding: 4px 16px 10px 0;
                    font-weight: 500;">
           {{ item.date | date: "%b %-d, %Y" }}
         </th>
         <td style="white-space: normal;
                    word-wrap: break-word;
-                   padding: 4px 0;">         <!-- tighter padding -->
+                   padding: 4px 0 10px 0;">
           {% if item.inline -%} 
             {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
           {%- else -%} 

@@ -36,6 +36,11 @@ table {
   }
 }
 
+.news table td,
+.news table th {
+  font-size: 1.02rem;
+}
+
 a, table.table a {
   color: var(--global-link-color);
   &:hover {
