@@ -1,10 +1,15 @@
-- date: 2026-03-05
+- date: 2026-04-02
   inline: true
-  content: "Our [paper](https://arxiv.org/abs/2507.11827) on evolving abstract transformers for gradient-guided abstract interpretation accepted (conditionally) at [PLDI'26](https://pldi26.sigplan.org/)!"
+  content: >
+    Our work [AbsEvolve](https://arxiv.org/abs/2507.11827) on evolving abstract transformers
+    which enable gradient-guided and adaptable abstract interpretation, has been accepted at
+    [PLDI'26](https://pldi26.sigplan.org/)! Will be in Boulder, CO in June to present!
 
 - date: 2026-03-01
   inline: true
-  content: "Our [short paper](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf) on a unified formalism for LLM-based theorem provers accepted at the <br> [VerifAI workshop, ICLR'26](https://verifai-workshop.github.io/)!"
+  content: >
+    Our work [Maestro](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf), which presents a unified formalism for LLM-based theorem provers, 
+    has been accepted at the [VerifAI workshop, ICLR'26](https://verifai-workshop.github.io/)!
 
 - date: 2026-01-12
   inline: true
@@ -12,7 +17,9 @@
 
 - date: 2025-12-22
   inline: true
-  content: "Our work [Syndicate](https://arxiv.org/abs/2404.05951) on efficient termination analysis using bidirectional search accepted at [ESOP'26](https://etaps.org/2026/conferences/esop/)!"
+  content: >
+    Our work [Syndicate](https://arxiv.org/abs/2404.05951) on efficient ranking function-based termination analysis using bidirectional 
+    search has been accepted at [ESOP'26](https://etaps.org/2026/conferences/esop/)!
 
 - date: 2025-10-08
   inline: true
