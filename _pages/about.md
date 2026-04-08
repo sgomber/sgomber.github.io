@@ -15,7 +15,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I am a 2<sup>nd</sup> year CS PhD student at the [University of Illinois Urbana-Champaign (UIUC)](https://siebelschool.illinois.edu/) working with 
-[Prof. Gagandeep Singh](https://ggndpsngh.github.io/). I am broadly interested in formal methods and programmaning languages. Currently, I am working on making 
+[Prof. Gagandeep Singh](https://ggndpsngh.github.io/). I am broadly interested in formal methods and programming languages. Currently, I am working on making 
 abstract interpretation-based program analysis more efficient and adaptable across diverse analysis scenarios by leveraging symbolic reasoning and learning-based techniques.
 I am also interested in automated reasoning tools such as SAT and SMT solvers, and the analysis and use of neuro-symbolic systems.
 
