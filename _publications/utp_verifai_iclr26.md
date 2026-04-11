@@ -16,5 +16,12 @@ links:
   - name: "Paper"
     url: "Theorem_Proving_VerifAI_2026.pdf"
 
-bibtex: 
+bibtex: >
+  @inproceedings{singh2026unified,
+                title={Unified Operational Formalism for LLM-based Theorem-proving Systems},
+                author={Singh, Avaljot and Gomber, Shaurya and Sarita, Yasmin and Meseguer, Jos{\'e} and Singh, Gagandeep},
+                booktitle={ICLR 2026 Workshop: VerifAI-2: The Second Workshop on AI Verification in the Wild},
+                year={2026},
+                url={https://openreview.net/forum?id=OCmzbtoeUx}
+  }
 ---
