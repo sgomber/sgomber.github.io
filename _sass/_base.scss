@@ -4,7 +4,7 @@
 
 // Typography
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600&family=Urbanist:wght@400;500&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
@@ -39,6 +39,12 @@ table {
 .news table td,
 .news table th {
   font-size: 1.02rem;
+}
+
+.news-scroll-wrapper {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem 0.1rem;
 }
 
 a, table.table a {
@@ -728,7 +734,7 @@ html.transition *:after {
 }
 
 .authors {
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
   margin-bottom: 0.15rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
              Roboto, "Helvetica Neue", Arial, sans-serif
@@ -744,10 +750,7 @@ html.transition *:after {
   letter-spacing: 0.25px;
   // margin-top: 0.17rem;
   // margin-bottom: 0.17rem;
-  background-color: #fff0f0;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.87em;
+  font-size: 0.95em;
   color: var(--global-venue-color);
 }
 
@@ -784,7 +787,7 @@ html.transition *:after {
 }
 
 .paper-links {
-    font-size: 0.87rem;
+    font-size: 0.9rem;
     margin-top: 5px;
 }
 

@@ -1,6 +1,6 @@
 <div class="news">
   <p class="section-title-mid">News</p>
-  {% if site.data.news != blank -%} 
+  {% if site.data.news != blank -%}
   <div class="news-scroll-wrapper">
   <div class="table-responsive"
        style="overflow-y: auto;
@@ -30,21 +30,21 @@
                    word-wrap: break-word;
                    padding: 3px 0 9px 0;
                    vertical-align: top;">
-          {% if item.inline -%} 
+          {% if item.inline -%}
             {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
-          {%- else -%} 
+          {%- else -%}
             <a class="news-title" href="{{ item.url | relative_url }}">
               {{ item.title }}
             </a>
-          {%- endif %} 
+          {%- endif %}
         </td>
       </tr>
-      {%- endfor %} 
+      {%- endfor %}
     </table>
-    
+
   </div>
   </div>
-  {%- else -%} 
+  {%- else -%}
   <p>No news so far...</p>
-  {%- endif %} 
+  {%- endif %}
 </div>

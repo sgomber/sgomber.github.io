@@ -2,8 +2,8 @@
   inline: true
   content: >
     Our work [AbsEvolve](https://arxiv.org/abs/2507.11827) on evolving abstract transformers
-    which enable gradient-guided and adaptable abstract interpretation, has been accepted at
-    [PLDI'26](https://pldi26.sigplan.org/)! Will be in Boulder, CO in June to present!
+    for gradient-guided abstract interpretation, has been accepted at
+    [PLDI'26](https://pldi26.sigplan.org/)! Looking forward to presenting in Boulder, CO this June!
 
 - date: 2026-03-01
   inline: true
