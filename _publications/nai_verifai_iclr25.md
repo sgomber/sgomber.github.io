@@ -7,9 +7,9 @@ authors: "<span class=author-font>Shaurya Gomber</span>, Gagandeep Singh"
 date: 2024-06-26
 
 venue:
-  - name: "VerifAI @ ICLR 2025"
+  - name: "ICLR 2025: VerifAI"
     url: "https://verifai-workshop.github.io/"
-  - name: "SRC @ PLDI 2024"
+  - name: "PLDI 2024: SRC"
     url: "https://pldi24.sigplan.org/track/pldi-2024-src"
 
 abstract: >

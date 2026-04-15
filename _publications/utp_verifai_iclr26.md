@@ -6,7 +6,7 @@ title: "Unified Operational Formalism for LLM-based Theorem-proving Systems"
 authors: "Avaljot Singh*, <span class=author-font>Shaurya Gomber*</span>, Yasmin Sarita, José Meseguer, Gagandeep Singh"
 date: 2026-03-01
 venue:
-  - name: "VerifAI @ ICLR 2026"
+  - name: "ICLR 2026: VerifAI"
     url: "https://verifai-workshop.github.io/"
 
 abstract: >
