@@ -8,7 +8,7 @@
 - date: 2026-03-01
   inline: true
   content: >
-    Our work [Maestro](assets/pdf/papers_posters/Unified_Theorem_Proving.pdf), which presents a unified formalism for LLM-based theorem provers, 
+    Our work [Maestro](assets/pdf/papers_posters/Theorem_Proving_VerifAI_2026.pdf), which presents a unified formalism for LLM-based theorem provers, 
     has been accepted at the [VerifAI workshop, ICLR'26](https://verifai-workshop.github.io/)!
 
 - date: 2026-01-12
