@@ -1,7 +1,7 @@
 - date: 2026-04-02
   inline: true
   content: >
-    Our work [AbsEvolve](https://arxiv.org/abs/2507.11827) on evolving abstract transformers
+    Our work [AbsEvolve](assets/pdf/papers_posters/AbsEvolve_PLDI_26.pdf) on evolving abstract transformers
     for gradient-guided abstract interpretation, has been accepted at
     [PLDI'26](https://pldi26.sigplan.org/)! Looking forward to presenting in Boulder, CO this June!
 
@@ -18,7 +18,7 @@
 - date: 2025-12-22
   inline: true
   content: >
-    Our work [Syndicate](https://arxiv.org/abs/2404.05951) on efficient ranking function-based termination analysis using bidirectional 
+    Our work [Syndicate](assets/pdf/papers_posters/Syndicate.pdf) on efficient ranking function-based termination analysis using bidirectional 
     search has been accepted at [ESOP'26](https://etaps.org/2026/conferences/esop/)!
 
 - date: 2025-10-08
