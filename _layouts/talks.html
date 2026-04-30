@@ -9,30 +9,25 @@ layout: default
     </p>
 
     <ul class="list-group">
-        {%- assign talks = site.data.talks -%} 
-        {% for talk in talks %} 
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div>
-                <span class="paper-title">
-                    {{ talk.title }}
-                </span>
-                <br>
-                <span class="talk_venue">
-                    {{ talk.loc }}
-                </span>
+        {%- assign talks = site.data.talks -%}
+        {% for talk in talks %}
+        <li class="list-group-item">
+            <span class="paper-title">{{ talk.title }}</span>
+            {% for venue in talk.venues %}
+              {%- assign slides = venue.slides | default: talk.slides -%}
+            <div class="d-flex justify-content-between align-items-center mt-1">
+                <span class="talk_venue">{{ venue.loc }}</span>
+                <div class="text-right" style="white-space: nowrap; margin-left: 1rem;">
+                    {% if slides %}
+                    <a class="paper-links" style="font-size: 0.9rem;" href="{{ slides | prepend: 'assets/pdf/talks/' | relative_url}}">{{ venue.date | date: "%b %-d, %Y" }}</a>
+                    {% else %}
+                    <span style="font-size: 0.9rem;">{{ venue.date | date: "%b %-d, %Y" }}</span>
+                    {% endif %}
+                </div>
             </div>
-            <div class="text-right">
-                <span style="font-size: 0.9rem;">
-                    {{ talk.date | date: "%b %-d, %Y" }}
-                </span><br>
-                {% if talk.slides %}
-                <span>
-                    <a class="paper-links" href="{{ talk.slides | prepend: 'assets/pdf/talks/' | relative_url}}">Slides</a>
-                </span>
-                {% endif %}
-            </div>
+            {% endfor %}
         </li>
-      {%- endfor %}
+        {%- endfor %}
       </ul>
       <br>
       <br>

@@ -1,39 +1,55 @@
-- date: 2025-10-01
-  title: "LINC: A Neuro-symbolic Approach for Logical Reasoning"
-  loc: PL/FM/SE PhD Qualification Exam, UIUC
+- title: "Evolving Abstract Transformers for Gradient-Guided, Adaptable Abstract Interpretation"
+  slides: AbsEvolve.pdf
+  venues:
+    - date: 2026-04-30
+      loc: Guest Lecture, CS477 Formal Software Development Methods, Spring 2026, UIUC
+    - date: 2026-04-22
+      loc: PL/FM/SE Seminar, Spring 2026, UIUC
+
+- title: "LINC: A Neuro-symbolic Approach for Logical Reasoning"
   slides: Quals_LINC.pdf
+  venues:
+    - date: 2025-10-01
+      loc: PL/FM/SE PhD Qualification Exam, UIUC
 
-- date: 2025-05-01
-  title: Multi-Network Relational Verification and Certifiable Training
-  loc: CS584 Embedded System Verification, Spring 2025, UIUC
+- title: Multi-Network Relational Verification and Certifiable Training
   slides: Multi_Net_Verification.pdf
+  venues:
+    - date: 2025-05-01
+      loc: CS584 Embedded System Verification, Spring 2025, UIUC
 
-- date: 2024-04-19
-  title: Neural Abstract Interpretation
-  loc: Formal Methods Seminar, Spring 2024, UIUC
+- title: Neural Abstract Interpretation
   slides: NAI_FM.pdf
+  venues:
+    - date: 2024-04-19
+      loc: Formal Methods Seminar, Spring 2024, UIUC
 
-- date: 2023-11-27
-  title: Verification and Certified Training of PINNs
-  loc: CS598 Scientific Machine Learning, Fall 2023, UIUC
+- title: Verification and Certified Training of PINNs
   slides: PINN_Verification.pdf
+  venues:
+    - date: 2023-11-27
+      loc: CS598 Scientific Machine Learning, Fall 2023, UIUC
 
-- date: 2023-11-08
-  title: Satisfiability and Synthesis Modulo Oracles
-  loc: Formal Methods Seminar, Fall 2023, UIUC
+- title: Satisfiability and Synthesis Modulo Oracles
   slides: SMTO.pdf
+  venues:
+    - date: 2023-11-08
+      loc: Formal Methods Seminar, Fall 2023, UIUC
 
-- date: 2023-05-08
-  title: Neural Approximations of Abstract Transformers
-  loc: CS477 Formal Software Development Methods, Spring 2023, UIUC
+- title: Neural Approximations of Abstract Transformers
   slides: Neural_Abstract_Transformers.pdf
+  venues:
+    - date: 2023-05-08
+      loc: CS477 Formal Software Development Methods, Spring 2023, UIUC
 
-- date: 2023-03-31
-  title: Synthesizing Abstract Transformers
-  loc: Formal Methods Seminar, Spring 2023, UIUC
+- title: Synthesizing Abstract Transformers
   slides: Synthesizing_Abstract_Transformers.pdf
+  venues:
+    - date: 2023-03-31
+      loc: Formal Methods Seminar, Spring 2023, UIUC
 
-- date: 2022-11-27
-  title: Monotonic Neural Networks
-  loc: CS521 Trustworthy AI Systems, Fall 2022, UIUC
+- title: Monotonic Neural Networks
   slides: Monotonic_Neural_Networks.pdf
+  venues:
+    - date: 2022-11-27
+      loc: CS521 Trustworthy AI Systems, Fall 2022, UIUC
