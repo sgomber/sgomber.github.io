@@ -19,13 +19,22 @@ links:
     url: "https://dl.acm.org/doi/10.1145/3808346"
 
 bibtex: >
-    @misc{ustad_arxiv,
-        title={Universal Synthesis of Differentiably Tunable Numerical Abstract Transformers}, 
-        author={Shaurya Gomber and Debangshu Banerjee and Gagandeep Singh},
-        year={2025},
-        eprint={2507.11827},
-        archivePrefix={arXiv},
-        primaryClass={cs.PL},
-        note={\url{https://arxiv.org/abs/2507.11827}}, 
-    }
+  @article{10.1145/3808346,
+          author = {Gomber, Shaurya and Banerjee, Debangshu and Singh, Gagandeep},
+          title = {Evolving Abstract Transformers for Gradient-Guided, Adaptable Abstract Interpretation},
+          year = {2026},
+          issue_date = {June 2026},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          volume = {10},
+          number = {PLDI},
+          url = {https://doi.org/10.1145/3808346},
+          doi = {10.1145/3808346},
+          journal = {Proc. ACM Program. Lang.},
+          month = jun,
+          articleno = {268},
+          numpages = {25},
+          keywords = {Adaptable Analysis, Efficient and Precise Abstract Interpretation, Gradient-Guided Optimization, Parametric Abstract Outputs}
+  }
+
 ---
