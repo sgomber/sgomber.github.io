@@ -1,6 +1,9 @@
 - title: "Evolving Abstract Transformers for Gradient-Guided, Adaptable Abstract Interpretation"
   slides: AbsEvolve.pdf
   venues:
+    - date: 2026-06-17
+      loc: Programming Languages Design and Implementation (PLDI) 2026, Boulder, CO
+      slides: AbsEvolve_PLDI.pdf
     - date: 2026-04-30
       loc: Guest Lecture, CS477 Formal Software Development Methods, Spring 2026, UIUC
     - date: 2026-04-22
