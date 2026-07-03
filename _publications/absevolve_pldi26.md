@@ -17,9 +17,11 @@ links:
     url: "AbsEvolve_PLDI_26.pdf"
   - name: "DOI"
     url: "https://dl.acm.org/doi/10.1145/3808346"
+  - name: "Code"
+    url: "https://github.com/uiuc-focal-lab/AbsEvolve"
 
 bibtex: >
-  @article{10.1145/3808346,
+  @article{gomber2026absevolve,
           author = {Gomber, Shaurya and Banerjee, Debangshu and Singh, Gagandeep},
           title = {Evolving Abstract Transformers for Gradient-Guided, Adaptable Abstract Interpretation},
           year = {2026},
