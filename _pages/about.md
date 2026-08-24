@@ -14,8 +14,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a third-year CS PhD student at the [University of Illinois Urbana-Champaign (UIUC)]
-(https://siebelschool.illinois.edu/) working with  [Prof. Gagandeep Singh](https://ggndpsngh.github.io/).
+I am a third-year CS PhD student at the [University of Illinois Urbana-Champaign (UIUC)](https://siebelschool.illinois.edu/) 
+working with  [Prof. Gagandeep Singh](https://ggndpsngh.github.io/).
 I am broadly interested in formal methods and automated reasoning. My current research focuses on 
 developing precise and efficient program analyses using adaptable abstract interpretation, 
 gradient-guided optimization, and efficient nonlinear reasoning. I am also interested in SAT/SMT 
