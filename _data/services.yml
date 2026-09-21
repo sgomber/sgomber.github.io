@@ -8,6 +8,11 @@
   type: Review Committee
   link: https://verify-agents-workshop.github.io/
 
+- date: 2026-08-16
+  name: "UIUC PL/FM/SE Seminar (Fall'26)"
+  type: Organizer
+  link: https://plfmse-seminar-uiuc.github.io/
+
 - date: 2025-01-16
   name: "PLDI'25"
   type: Artifact Evaluation Committee
