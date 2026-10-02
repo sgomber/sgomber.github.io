@@ -4,7 +4,7 @@
     {% assign abstract_id = "abstract-" | append: forloop.index0 | append: "-" | append: publication.title | slugify %}
     {% assign bibtex_id = "bibtex-" | append: forloop.index0 | append: "-" | append: publication.title | slugify %}
     
-    <li class="list-group-item">
+    <li class="list-group-item pub-item">
         <div class="title paper-title">
             {{ publication.title }}
         </div>
@@ -65,16 +65,12 @@
                     {% assign final_url = "/assets/pdf/papers_posters/" | append: link_url %}
                   {% endif %}
                   {% assign link_html = '<a class="paper-links" href="' | append: final_url | append: '" target="_blank">' | append: link.name | append: '</a>' %}
-                  {% if links != "" %}
-                    {% assign links = links | append: '&nbsp;<span class="small-slash">/</span>&nbsp;' %}
-                  {% endif %}
+                  
                   {% assign links = links | append: link_html %}
                 {% endfor %}
               
                 {% if publication.bibtex %}
-                  {% if links != "" %}
-                    {% assign links = links | append: '&nbsp;<span class="small-slash">/</span>&nbsp;' %}
-                  {% endif %}
+                  
                   {% assign links = links | append: '<a class="paper-links" href="#" data-bs-toggle="collapse" data-bs-target="#' | append: bibtex_id | append: '" aria-expanded="false" aria-controls="' | append: bibtex_id | append: '">BibTeX</a>' %}
                 {% endif %}
               

@@ -11,7 +11,7 @@ layout: default
     <ul class="list-group">
         {%- assign talks = site.data.talks -%}
         {% for talk in talks %}
-        <li class="list-group-item">
+        <li class="list-group-item pub-item">
             <span class="paper-title">{{ talk.title }}</span>
             {% for venue in talk.venues %}
               {%- assign slides = venue.slides | default: talk.slides -%}

@@ -734,13 +734,14 @@ html.transition *:after {
 }
 
 .authors {
-  font-size: 0.84rem;
-  color: #6B7280;
+  font-size: 0.88rem;
+  color: #4B5563;
   margin-bottom: 0.17rem;
 }
 
 .author-font {
-  font-weight: 400;
+  font-weight: 600;
+  color: #111827;
 }
 
 .venue {
@@ -760,8 +761,8 @@ html.transition *:after {
 }
 
 .talk_venue {
-  font-size: 0.84rem;
-  color: #6B7280;
+  font-size: 0.88rem;
+  color: #4B5563;
   margin-bottom: 0.17rem;
 }
 
@@ -770,6 +771,7 @@ html.transition *:after {
 }
 
 .paper-award {
+    margin-left: 0.4rem;
     margin-top: 1px;
 }
 
@@ -789,12 +791,24 @@ html.transition *:after {
 }
 
 .paper-actions {
-    margin-top: 0.08rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+}
+
+.list-group-item.pub-item {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
 }
 
 .paper-actions .paper-links {
-    color: var(--global-text-color-light);
-    font-size: 0.86rem;
+    color: #334155;
+    background-color: #EEF2F7;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.35;
@@ -803,15 +817,14 @@ html.transition *:after {
 
 .paper-actions .paper-links:hover,
 .paper-actions .paper-links:focus {
-    border-bottom-color: var(--global-venue-color);
-    color: var(--global-venue-color);
+    background-color: #DCE7F5;
+    color: #0B5CAD;
     text-decoration: none;
 }
 
 .paper-actions .small-slash {
-    color: var(--global-text-color-light);
+    color: #9CA3AF;
     font-size: 0.82rem;
-    opacity: 0.7;
 }
 
 .abstract-block {
